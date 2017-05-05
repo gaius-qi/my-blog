@@ -1,0 +1,25 @@
+<template>
+  <div>
+    <button type="button" v-on:click="scrollWindow" class="down">
+      <div class="animated rubberBand" data-icon="ei-chevron-down" data-size="l"></div>
+    </button>
+  </div>
+</template>
+
+<script>
+  export default {
+    methods: {
+      scrollWindow () {
+        window.scrollTo(100, 705)
+      }
+    }
+  }
+</script>
+
+<style scoped>
+  .down{
+    background: rgba(0,0,0,0);
+    border: 0;
+    outline:none;
+  }
+</style>

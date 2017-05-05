@@ -1,28 +1,38 @@
 <template>
   <div class="home">
-    <h1>Fear always springs from ignorance.</h1>
-    <img class="photo" src="../assets/img02.jpg"></img>
-    <h2>Isaac's Blog</h2>
+    <nav-top></nav-top>
+      <h1 class="animated rubberBand" id="letter">Fear always springs from ignorance.</h1>
+    <img class="photo animated rubberBand" src="../assets/img02.jpg"></img>
+    <h2 class="animated rubberBand">Isaac's Blog</h2>
     <a href="https://github.com/qwbtc" target="_blank">
-      <div data-icon="ei-sc-github" data-size="m"></div>
+      <div class="animated rubberBand" data-icon="ei-sc-github" data-size="m"></div>
     </a>
     <a href="https://www.facebook.com/dylan.bob.77377" target="_blank">
-      <div data-icon="ei-sc-facebook" data-size="m"></div>
+      <div class="animated rubberBand" data-icon="ei-sc-facebook" data-size="m"></div>
     </a>
     <a href="https://twitter.com/BobDylan0313" target="_blank">
-      <div data-icon="ei-sc-twitter" data-size="m"></div>
+      <div class="animated rubberBand" data-icon="ei-sc-twitter" data-size="m"></div>
     </a>
-    <div data-icon="ei-user" data-size="m"></div>
+    <div class="animated rubberBand" data-icon="ei-user" data-size="m"></div>
+    <home-down-buttom></home-down-buttom>
+    <hr class="divider"/>
   </div>
 </template>
 
 <script>
+import HomeDownButtom from './common/homeDownButtom.vue'
+import NavTop from './common/nav.vue'
+
 export default {
   name: 'home',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    'homeDownButtom': HomeDownButtom,
+    'navTop': NavTop
   }
 }
 </script>
@@ -30,9 +40,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .home{
-    background: url(../assets/img01.png) no-repeat;
+    background: url(../assets/img01.png) repeat-y;
     background-size: 100% 46rem;
-    height: 46rem;
+    height: 150rem;
     text-align: center;
   }
   h1{
@@ -40,6 +50,7 @@ export default {
     margin: 8rem 0 1rem 0;
     font-size: 2rem;
     font-weight: lighter;
+    font-family: Chalkduster, fantasy ;
   }
   .photo{
     display: block;
@@ -48,14 +59,10 @@ export default {
     border-radius: 50%;
     margin: 0 auto;
   }
-</style>
-<style>
-  .icon{
-    fill: #2c3e50;
-    border-radius: 50%;
-  }
-  .icon:hover{
-    fill: #00fa9a;
-    background-color: #8492A6;
+  .divider{
+    margin: 5.5rem 0 0 0;
+    height: 40px;
+    border: 0;
+    box-shadow: inset 0 40px 40px -40px rgba(0, 0, 0, 1);
   }
 </style>
