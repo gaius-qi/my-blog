@@ -38,6 +38,6 @@ export default {
     color: #00fa9a;
   }
   .bar{
-    margin-left: 60rem;
+    margin-left: 58rem;
   }
 </style>
