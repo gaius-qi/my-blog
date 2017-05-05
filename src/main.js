@@ -8,6 +8,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import axios from 'axios'
 import 'animate.css/animate.min.css'
+import 'evil-icons/assets/evil-icons.css'
 
 Vue.config.productionTip = false
 
