@@ -61,8 +61,8 @@ export default {
   }
   .divider{
     margin: 5.5rem 0 0 0;
-    height: 40px;
+    height: 3.3rem;
     border: 0;
-    box-shadow: inset 0 40px 40px -40px rgba(0, 0, 0, 1);
+    box-shadow: inset 0 3.3rem 3.3rem -3.3rem rgba(0, 0, 0, 1);
   }
 </style>
