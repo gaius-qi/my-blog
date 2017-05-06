@@ -3,21 +3,21 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
-import axios from 'axios'
 import 'animate.css/animate.min.css'
 import 'evil-icons/assets/evil-icons.css'
 
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
-Vue.prototype.$http = axios
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   template: '<App/>',
   components: { App }

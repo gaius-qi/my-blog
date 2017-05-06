@@ -47,6 +47,10 @@ module.exports = {
         include: [resolve('src'), resolve('test')]
       },
       {
+        test: /\.json$/,
+        loader: "json-loader"
+      },
+      {
         test: /\.styl$/,
         loader: 'style-loader!css-loader!stylus-loader',
         include: resolve('src')
