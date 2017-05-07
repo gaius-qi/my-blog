@@ -14,14 +14,31 @@
       <div class="animated rubberBand" data-icon="ei-sc-twitter" data-size="m"></div>
     </a>
     <div class="animated rubberBand" data-icon="ei-user" data-size="m"></div>
-    <home-down-buttom></home-down-buttom>
+    <home-down-button></home-down-button>
     <hr class="divider"/>
+    <main>
+      <article>
+        <artcle-content></artcle-content>
+        <artcle-content></artcle-content>
+        <artcle-content></artcle-content>
+      </article>
+      <aside>
+        <person-abstract></person-abstract>
+        <document-abstract></document-abstract>
+      </aside>
+    </main>
+    <footer></footer>
+    <home-up-button></home-up-button>
   </div>
 </template>
 
 <script>
-import HomeDownButtom from './common/homeDownButtom.vue'
+import HomeDownButton from './common/homeDownButton.vue'
+import HomeUpButton from './common/homeUpButton.vue'
 import NavTop from './common/nav.vue'
+import PersonAbstract from './common/personAbstract.vue'
+import DocumentAbstract from './common/documentAbstract.vue'
+import ArtcleContent from './common/artcleContent.vue'
 
 export default {
   name: 'home',
@@ -31,8 +48,12 @@ export default {
     }
   },
   components: {
-    'homeDownButtom': HomeDownButtom,
-    'navTop': NavTop
+    'homeDownButton': HomeDownButton,
+    'navTop': NavTop,
+    'homeUpButton': HomeUpButton,
+    'personAbstract': PersonAbstract,
+    'documentAbstract': DocumentAbstract,
+    'artcleContent': ArtcleContent
   }
 }
 </script>
@@ -64,5 +85,19 @@ export default {
     height: 3.3rem;
     border: 0;
     box-shadow: inset 0 3.3rem 3.3rem -3.3rem rgba(0, 0, 0, 1);
+  }
+  main{
+    margin-top: -2.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    height: 93rem;
+    justify-content: space-around;
+  }
+  article{
+    flex-grow: 3;
+  }
+  aside{
+    flex-grow: 1;
   }
 </style>

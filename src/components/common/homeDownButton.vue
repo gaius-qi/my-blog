@@ -1,10 +1,8 @@
 <template>
   <div>
-    <button type="button" v-on:click="scrollWindow" class="down">
+    <button type="button" @click="scrollWindow" class="down">
       <div class="animated rubberBand" data-icon="ei-chevron-down" data-size="l"></div>
     </button>
-    <button type="button" @click="getTestInfo">fdsafds</button>
-    {{test}}
   </div>
 </template>
 
