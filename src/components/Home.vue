@@ -10,7 +10,7 @@
           <h2 class="animated rubberBand">Isaac's Blog</h2>
         </figcaption>
       </figure>
-      <section>
+      <aside role="complementary">
         <a href="https://github.com/qwbtc" target="_blank">
           <div class="animated rubberBand" data-icon="ei-sc-github" data-size="m"></div>
         </a>
@@ -21,7 +21,7 @@
           <div class="animated rubberBand" data-icon="ei-sc-twitter" data-size="m"></div>
         </a>
         <div class="animated rubberBand" data-icon="ei-user" data-size="m"></div>
-      </section>
+      </aside>
       <home-down-button></home-down-button>
       <home-up-button></home-up-button>
     </header>
