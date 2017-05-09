@@ -14,7 +14,7 @@ export default {
       'getTestInfo'
     ]),
     scrollWindow () {
-      window.scrollTo(100, 705)
+      window.scrollTo(0, 705)
     }
   },
   computed: {

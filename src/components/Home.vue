@@ -1,34 +1,49 @@
 <template>
-  <div class="home">
-    <nav-top></nav-top>
+  <div class="container">
+
+    <header role="banner">
+      <nav-top></nav-top>
       <h1 class="animated rubberBand" id="letter">Fear always springs from ignorance.</h1>
-    <img class="photo animated rubberBand" src="../assets/img02.jpg"></img>
-    <h2 class="animated rubberBand">Isaac's Blog</h2>
-    <a href="https://github.com/qwbtc" target="_blank">
-      <div class="animated rubberBand" data-icon="ei-sc-github" data-size="m"></div>
-    </a>
-    <a href="https://www.facebook.com/dylan.bob.77377" target="_blank">
-      <div class="animated rubberBand" data-icon="ei-sc-facebook" data-size="m"></div>
-    </a>
-    <a href="https://twitter.com/BobDylan0313" target="_blank">
-      <div class="animated rubberBand" data-icon="ei-sc-twitter" data-size="m"></div>
-    </a>
-    <div class="animated rubberBand" data-icon="ei-user" data-size="m"></div>
-    <home-down-button></home-down-button>
+      <figure>
+        <img class="photo animated rubberBand" src="../assets/img02.jpg"></img>
+        <figcaption>
+          <h2 class="animated rubberBand">Isaac's Blog</h2>
+        </figcaption>
+      </figure>
+      <section>
+        <a href="https://github.com/qwbtc" target="_blank">
+          <div class="animated rubberBand" data-icon="ei-sc-github" data-size="m"></div>
+        </a>
+        <a href="https://www.facebook.com/dylan.bob.77377" target="_blank">
+          <div class="animated rubberBand" data-icon="ei-sc-facebook" data-size="m"></div>
+        </a>
+        <a href="https://twitter.com/BobDylan0313" target="_blank">
+          <div class="animated rubberBand" data-icon="ei-sc-twitter" data-size="m"></div>
+        </a>
+        <div class="animated rubberBand" data-icon="ei-user" data-size="m"></div>
+      </section>
+      <home-down-button></home-down-button>
+      <home-up-button></home-up-button>
+    </header>
+
     <hr class="divider"/>
-    <main>
+
+    <main role="main">
       <article>
         <artcle-content></artcle-content>
         <artcle-content></artcle-content>
         <artcle-content></artcle-content>
       </article>
-      <aside>
+      <aside role="complementary">
         <person-abstract></person-abstract>
         <document-abstract></document-abstract>
       </aside>
     </main>
-    <footer></footer>
-    <home-up-button></home-up-button>
+
+    <footer role="contentinfo">
+
+    </footer>
+
   </div>
 </template>
 
@@ -60,7 +75,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .home{
+  .container{
     background: url(../assets/img01.png) repeat-y;
     background-size: 100% 46rem;
     height: 150rem;
@@ -99,5 +114,8 @@ export default {
   }
   aside{
     flex-grow: 1;
+  }
+  figure{
+    margin: 0;
   }
 </style>

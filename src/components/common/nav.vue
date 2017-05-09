@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav role="navigation">
     <a href="#" class="navbar">Home</a>
     <a href="#" class="navbar">Archive</a>
     <a href="#" class="navbar">About</a>
