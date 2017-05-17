@@ -5,7 +5,7 @@
     <nav-top></nav-top>
     <h1 class="animated rubberBand" id="letter">Fear always springs from ignorance.</h1>
     <figure>
-      <img class="photo animated rubberBand" src="../assets/img02.jpg"></img>
+      <img class="photo animated rubberBand" src="../assets/image/img02.jpg"></img>
       <figcaption>
         <h2 class="animated rubberBand">Isaac's Blog</h2>
       </figcaption>
@@ -29,14 +29,15 @@
   <hr class="divider" />
 
   <main role="main">
-    <article>
+    <div class="content-wrap">
       <artcle-content></artcle-content>
       <artcle-content></artcle-content>
       <artcle-content></artcle-content>
-    </article>
+    </div>
     <aside role="complementary">
       <person-abstract></person-abstract>
       <document-abstract></document-abstract>
+      <archive-abstract></archive-abstract>
     </aside>
   </main>
 
@@ -54,6 +55,7 @@ import NavTop from './common/nav.vue'
 import PersonAbstract from './common/personAbstract.vue'
 import DocumentAbstract from './common/documentAbstract.vue'
 import ArtcleContent from './common/artcleContent.vue'
+import ArchiveAbstract from './common/archiveAbstract.vue'
 
 export default {
   name: 'home',
@@ -68,7 +70,8 @@ export default {
     'homeUpButton': HomeUpButton,
     'personAbstract': PersonAbstract,
     'documentAbstract': DocumentAbstract,
-    'artcleContent': ArtcleContent
+    'artcleContent': ArtcleContent,
+    'archiveAbstract': ArchiveAbstract
   }
 }
 </script>
@@ -76,7 +79,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="stylus" scoped>
   .container
-    background url(../assets/img01.png) repeat-y
+    background url(../assets/image/img01.png) repeat-y
     background-size 100% 46rem
     height 150rem
     text-align center
@@ -109,7 +112,7 @@ export default {
     height 93rem
     justify-content space-around
 
-  article
+  .content-wrap
     flex-grow 25
 
   aside

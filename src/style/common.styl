@@ -1,3 +1,17 @@
+@font-face
+  font-family 'SentyWEN2017'
+  //因为本文件在APP.vue中引用的，所以相对路径是相对于APP.vue文件的路径
+  //src: url('./assets/font/NotoSansCJk/NotoSansCJKsc-Light.otf') format('opentype');
+  src url('./assets/font/Senty/SentyWEN2017.ttf') format('truetype')
+
+@font-face
+  font-family 'SentyMARUKO'
+  src url('./assets/font/Senty/SentyMARUKO.ttf') format('truetype')
+
+@font-face
+  font-family 'SentyZHAO'
+  src url('./assets/font/Senty/SentyZHAO.ttf') format('truetype')
+
 #app
   font-family 'Avenir', Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased
@@ -37,3 +51,6 @@ a
 .info-link .icon-style:hover
   background-color rgba(0,0,0,0)
   fill #00fa9a
+
+.icon--ei-sc-github, .icon--ei-sc-facebook, .icon--ei-sc-twitter, .icon--ei-user
+  transition all 0.5s linear

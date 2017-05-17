@@ -32,9 +32,8 @@ export default {}
     color #2c3e50
     font-weight bold
     text-decoration none
-
-  .navbar:hover
-    color #00fa9a
+    &:hover
+      color #00fa9a
 
   .bar
     margin-left 58rem

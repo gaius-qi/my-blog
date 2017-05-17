@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-  <img class="avatar" src="../../assets/img03.png"></img>
+  <img class="avatar" src="../../assets/image/img03.png"></img>
   <h3 class="nick-name">Isaac</h3>
   <p class="desc">Fear always springs from ignorance.</p>
   <div class="post-info">
@@ -84,6 +84,9 @@ export default {}
   justify-content space-around
   width 60%
   margin 0.6rem auto 0 auto
+
+.info-name
+  font-family 'SentyMARUKO'
 
 span
   font-family "Monda", "PingFang SC"

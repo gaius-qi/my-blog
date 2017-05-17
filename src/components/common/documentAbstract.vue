@@ -18,12 +18,12 @@ export default {
         text: '标签',
         textStyle: {
           fontSize: 18,
-          fontFamily: 'Avenir',
+          fontFamily: 'SentyMARUKO',
           fontWeight: 400,
           color: '#2c3e50'
         },
         left: 'center',
-        top: 15
+        top: 16
       },
       tooltip: {
         show: false
