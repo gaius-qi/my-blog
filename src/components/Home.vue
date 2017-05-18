@@ -79,9 +79,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="stylus" scoped>
   .container
-    background url(../assets/image/img01.png) repeat-y
+    background url(../assets/image/img01.png) repeat
     background-size 100% 46rem
-    height 150rem
+    height auto
     text-align center
 
   h1
@@ -113,10 +113,12 @@ export default {
     justify-content space-around
 
   .content-wrap
-    flex-grow 25
+    flex-grow 5
+    min-width 20rem
 
   aside
     flex-grow 1
+    min-width 20rem
 
   figure
     margin 0
