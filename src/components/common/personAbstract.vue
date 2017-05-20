@@ -5,15 +5,15 @@
   <p class="desc">Fear always springs from ignorance.</p>
   <div class="post-info">
     <div class="info-inner">
-      <div class="info-num">10</div>
+      <div class="info-num">{{page_count_total}}</div>
       <div class="info-name">文章</div>
     </div>
     <div class="info-inner">
-      <div class="info-num">20</div>
+      <div class="info-num">{{category_count}}</div>
       <div class="info-name">分类</div>
     </div>
     <div class="info-inner">
-      <div class="info-num">12</div>
+      <div class="info-num">{{tags_count}}</div>
       <div class="info-name">标签</div>
     </div>
   </div>
@@ -35,7 +35,25 @@
 </template>
 
 <script>
-export default {}
+import { mapActions, mapState, mapGetters } from 'vuex'
+
+export default {
+  created () {
+    this.get_tags_info()
+  },
+  computed: {
+    ...mapGetters([
+      'tags_count',
+      'page_count_total',
+      'category_count'
+    ])
+  },
+  methods: {
+    ...mapActions({
+      get_tags_info: 'getTagsInfo'
+    })
+  }
+}
 </script>
 
 <style lang="stylus" scoped>

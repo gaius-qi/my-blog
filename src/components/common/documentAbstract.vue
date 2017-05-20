@@ -7,11 +7,12 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 import echarts from 'echarts'
 import 'echarts-wordcloud'
 
 export default {
-  mounted() {
+  mounted () {
     let wordsChart = echarts.init(document.getElementById('main'))
     wordsChart.setOption({
       title: {
@@ -30,7 +31,7 @@ export default {
       },
       series: [{
         type: 'wordCloud',
-        gridSize: 8,
+        gridSize: 7,
         sizeRange: [11, 32],
         rotationRange: [0, 0],
         shape: 'pentagon',
@@ -38,7 +39,7 @@ export default {
         textStyle: {
           normal: {
             fontFamily: 'Avenir',
-            color: function() {
+            color: function () {
               return 'rgb(' + [
                 Math.round(Math.random() * 160),
                 Math.round(Math.random() * 160),
@@ -51,7 +52,16 @@ export default {
             shadowColor: '#333'
           }
         },
-        data: [{
+        data: [
+          {
+            name: 'server',
+            value: 3252
+          },
+          {
+            name: 'web',
+            value: 4324
+          },
+          {
             name: 'Ruby',
             value: 7788
           },
@@ -120,7 +130,7 @@ export default {
             value: 4734
           },
           {
-            name: 'phoenix',
+            name: 'Phoenix',
             value: 5637
           },
           {
@@ -134,10 +144,16 @@ export default {
         ]
       }]
     })
-    wordsChart.on('click', function(param) {
+
+    wordsChart.on('click', param => {
       let name = param.name
       alert(name)
     })
+  },
+  computed: {
+    ...mapState([
+      'tags'
+    ])
   }
 }
 </script>
@@ -152,8 +168,7 @@ export default {
 
 .chart
   height 20rem
-  display flex
-  justify-content center
+  width: 18rem
 
 .divider
   width 80%

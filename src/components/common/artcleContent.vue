@@ -1,26 +1,50 @@
 <template>
 <article>
   <header>
-    <h1>vue全栈开发部署你需要知道的一些事</h1>
+    <h1>{{pageTitle}}</h1>
   </header>
   <p>
-    随着 vuejs 作者尤雨溪发布消息，不再继续维护vue-resource，并推荐大家使用 axios 开始，axios 被越来越多的人所了解。本来想在网上找找详细攻略，突然发现，axios 的官方文档本身就非常详细！！有这个还要什么自行车！！所以推荐大家学习这种库，最好详细阅读其官方文档。大概翻译了一下 axios 的官方文档，相信大家只要吃透本文再加以实践，axios 就是小意思啦！！ 在移动端，使用滚动来处理业务逻辑的情况有很多，例如列表的滚动加载数据，下拉刷新等等都需要利用滚动的相关知识，但是滚动事件在不同的移动端机型却又有不同的表现，下面就来一一总结一下。
+    {{pageSummary}}
   </p>
   <button type="button" name="button"> 阅读全文 </button>
-  <hr class="divider"/>
+  <hr class="divider" />
   <footer>
     <em class="bottom-tag">
-      <span>#http</span>
-      <span>#vue</span>
+      <span v-for="tag in tags">#{{tag}}</span>
     </em>
     <span class="browse-num">浏览次数:123</span>
-    <time class="release-time" pubdate datetime="2012-10-03">2012/10/03</time>
+    <time class="release-time" pubdate :datetime="createdAt">{{dataTime}}</time>
   </footer>
 </article>
 </template>
 
 <script>
-export default {}
+export default {
+  // 父子组件传递信息，父组件page-content传递到子组件props中要用驼峰pageContent
+  props: {
+    pageSummary: {
+      type: String,
+      required: true
+    },
+    pageTitle: {
+      type: String,
+      required: true
+    },
+    createdAt: {
+      type: String,
+      required: true
+    },
+    tags: {
+      type: Array
+    }
+  },
+  computed: {
+    dataTime () {
+      let pageDate = new Date(this.createdAt)
+      return pageDate.getFullYear() + '/' + (pageDate.getMonth() + 1) + '/' + pageDate.getDate()
+    }
+  }
+}
 </script>
 
 <style lang="stylus" scoped>
@@ -107,5 +131,8 @@ button
 .release-time
   float right
   margin-right 1rem
+
+span
+  margin-right: 0.5rem
 
 </style>

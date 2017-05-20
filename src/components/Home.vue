@@ -30,9 +30,22 @@
 
   <main role="main">
     <div class="content-wrap">
-      <artcle-content></artcle-content>
-      <artcle-content></artcle-content>
-      <artcle-content></artcle-content>
+      <!-- 新版本必须要设置:key否则有警告 -->
+      <artcle-content
+        v-for="(page_content, index) in page_contents"
+        :key="index"
+        :page-summary="page_content.summary"
+        :page-title="page_content.title"
+        :created-at="page_content.created"
+        :tags="page_content.tags">
+      </artcle-content>
+      <pagination
+        :page-index="currentPage"
+        :total="count"
+        :page-size="pageSize"
+        @change="pageChange"
+        class="paging">
+      </pagination>
     </div>
     <aside role="complementary">
       <person-abstract></person-abstract>
@@ -41,8 +54,11 @@
     </aside>
   </main>
 
-  <footer role="contentinfo">
+  <hr class="divider divider-last" />
 
+  <footer role="contentinfo">
+    <p>© 2016 &nbsp; Ö &nbsp; Isaac</p>
+    <p>All &nbsp; Rights &nbsp; Reserved</p>
   </footer>
 
 </div>
@@ -56,12 +72,42 @@ import PersonAbstract from './common/personAbstract.vue'
 import DocumentAbstract from './common/documentAbstract.vue'
 import ArtcleContent from './common/artcleContent.vue'
 import ArchiveAbstract from './common/archiveAbstract.vue'
+import Pagination from './common/pagination.vue'
+import { mapActions, mapGetters } from 'vuex'
 
 export default {
   name: 'home',
-  data() {
+  data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      // 每页显示条数
+      pageSize: 4,
+      // 当前页码
+      currentPage: 1,
+      // 总记录数
+      count: 0
+    }
+  },
+  mounted () {
+    this.getPagesInfo(1)
+  },
+  computed: {
+    ...mapGetters([
+      'page_contents',
+      'page_count_total'
+    ])
+  },
+  methods: {
+    ...mapActions([
+      'getPagesInfo'
+    ]),
+    pageChange (page) {
+      this.currentPage = page
+      this.getPagesInfo(this.currentPage)
+    }
+  },
+  watch: {
+    page_count_total (val) {
+      this.count = val || 1
     }
   },
   components: {
@@ -71,7 +117,8 @@ export default {
     'personAbstract': PersonAbstract,
     'documentAbstract': DocumentAbstract,
     'artcleContent': ArtcleContent,
-    'archiveAbstract': ArchiveAbstract
+    'archiveAbstract': ArchiveAbstract,
+    'pagination': Pagination
   }
 }
 </script>
@@ -109,11 +156,11 @@ export default {
     margin-left 1rem
     margin-right 1rem
     display flex
-    height 93rem
+    height auto
     justify-content space-around
 
   .content-wrap
-    flex-grow 5
+    flex-grow 20
     min-width 20rem
 
   aside
@@ -122,4 +169,21 @@ export default {
 
   figure
     margin 0
+
+  .divider-last
+    margin-top -1rem
+    box-shadow inset 0 -3.3rem 3.3rem -3.3rem rgba(0, 0, 0, 1)
+
+  .paging
+    margin-top 2.8rem
+
+  footer
+    margin-top 2rem
+    padding-bottom 1.2rem
+    p
+      font-size 1rem
+      font-family 'SentyMARUKO'
+      &:last-child
+        margin-top -1rem
+
 </style>
