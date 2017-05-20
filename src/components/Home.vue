@@ -179,7 +179,7 @@ export default {
 
   footer
     margin-top 2rem
-    padding-bottom 1.2rem
+    padding-bottom 0.6rem
     p
       font-size 1rem
       font-family 'SentyMARUKO'
