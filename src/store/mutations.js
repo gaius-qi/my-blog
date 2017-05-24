@@ -9,5 +9,14 @@ export default {
   },
   [types.GET_PAGES_DATE] (state, dates) {
     state.pages_date = dates
+  },
+  [types.GET_PAGE] (state, page) {
+    state.page = page
+  },
+  [types.GET_GATEGORY] (state, category) {
+    state.category = category
+  },
+  [types.SET_CURRENT_PAGE] (state, currentPage) {
+    state.current_page = currentPage
   }
 }

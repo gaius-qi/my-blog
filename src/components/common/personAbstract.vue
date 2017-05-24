@@ -1,7 +1,7 @@
 <template>
 <div class="container">
   <img class="avatar" src="../../assets/image/img03.png"></img>
-  <h3 class="nick-name">Isaac</h3>
+  <router-link :to="{ path: '/user/' + 2 + '/pages' }"><h3 class="nick-name" @click="scroll">Isaac</h3></router-link>
   <p class="desc">Fear always springs from ignorance.</p>
   <div class="post-info">
     <div class="info-inner">
@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import { mapActions, mapState, mapGetters } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 
 export default {
   created () {
@@ -51,7 +51,10 @@ export default {
   methods: {
     ...mapActions({
       get_tags_info: 'getTagsInfo'
-    })
+    }),
+    scroll () {
+      window.scrollTo(0, 705)
+    }
   }
 }
 </script>

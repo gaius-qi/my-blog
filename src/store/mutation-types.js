@@ -1,3 +1,6 @@
 export const GET_TAGS = 'GET_TAGS'
 export const GET_PAGES = 'GET_PAGES'
 export const GET_PAGES_DATE = 'GET_PAGES_DATE'
+export const GET_PAGE = 'GET_PAGE'
+export const GET_GATEGORY = 'GET_GATEGORY'
+export const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE'

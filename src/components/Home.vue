@@ -30,22 +30,7 @@
 
   <main role="main">
     <div class="content-wrap">
-      <!-- 新版本必须要设置:key否则有警告 -->
-      <artcle-content
-        v-for="(page_content, index) in page_contents"
-        :key="index"
-        :page-summary="page_content.summary"
-        :page-title="page_content.title"
-        :created-at="page_content.created"
-        :tags="page_content.tags">
-      </artcle-content>
-      <pagination
-        :page-index="currentPage"
-        :total="count"
-        :page-size="pageSize"
-        @change="pageChange"
-        class="paging">
-      </pagination>
+      <router-view></router-view>
     </div>
     <aside role="complementary">
       <person-abstract></person-abstract>
@@ -59,6 +44,7 @@
   <footer role="contentinfo">
     <p>© 2016 &nbsp; Ö &nbsp; Isaac</p>
     <p>All &nbsp; Rights &nbsp; Reserved</p>
+
   </footer>
 
 </div>
@@ -70,66 +56,30 @@ import HomeUpButton from './common/homeUpButton.vue'
 import NavTop from './common/nav.vue'
 import PersonAbstract from './common/personAbstract.vue'
 import DocumentAbstract from './common/documentAbstract.vue'
-import ArtcleContent from './common/artcleContent.vue'
 import ArchiveAbstract from './common/archiveAbstract.vue'
-import Pagination from './common/pagination.vue'
 import { mapActions, mapGetters } from 'vuex'
 
 export default {
   name: 'home',
-  data () {
-    return {
-      // 每页显示条数
-      pageSize: 4,
-      // 当前页码
-      currentPage: 1,
-      // 总记录数
-      count: 0
-    }
-  },
-  mounted () {
-    this.getPagesInfo(1)
-  },
-  computed: {
-    ...mapGetters([
-      'page_contents',
-      'page_count_total'
-    ])
-  },
-  methods: {
-    ...mapActions([
-      'getPagesInfo'
-    ]),
-    pageChange (page) {
-      this.currentPage = page
-      this.getPagesInfo(this.currentPage)
-    }
-  },
-  watch: {
-    page_count_total (val) {
-      this.count = val || 1
-    }
-  },
   components: {
     'homeDownButton': HomeDownButton,
     'navTop': NavTop,
     'homeUpButton': HomeUpButton,
     'personAbstract': PersonAbstract,
     'documentAbstract': DocumentAbstract,
-    'artcleContent': ArtcleContent,
-    'archiveAbstract': ArchiveAbstract,
-    'pagination': Pagination
+    'archiveAbstract': ArchiveAbstract
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+Add "scoped" attribute to limit CSS to this component only
 <style lang="stylus" scoped>
   .container
     background url(../assets/image/img01.png) repeat
     background-size 100% 46rem
     height auto
     text-align center
+    scroll-behavior smooth
 
   h1
     display inline-block
@@ -152,19 +102,17 @@ export default {
     box-shadow inset 0 3.3rem 3.3rem -3.3rem rgba(0, 0, 0, 1)
 
   main
-    margin-top -2.5rem
-    margin-left 1rem
-    margin-right 1rem
+    margin -2.5rem 1rem 0 1rem
     display flex
     height auto
     justify-content space-around
 
   .content-wrap
-    flex-grow 20
+    flex-grow 1
     min-width 20rem
 
   aside
-    flex-grow 1
+    flex-basis 20rem
     min-width 20rem
 
   figure
@@ -173,9 +121,6 @@ export default {
   .divider-last
     margin-top -1rem
     box-shadow inset 0 -3.3rem 3.3rem -3.3rem rgba(0, 0, 0, 1)
-
-  .paging
-    margin-top 2.8rem
 
   footer
     margin-top 2rem

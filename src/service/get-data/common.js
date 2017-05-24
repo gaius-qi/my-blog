@@ -1,18 +1,48 @@
 import axios from 'axios'
+
+const basicUrl = 'http://localhost:3000'
+const token = 'token=QsGxgMdiX+mOreeTdObQXcl4MyIhOm+oZ6MLJ0gympfAVqo4VF6gXq5/NZEBG9VKSOiYgnMeeSMQu9It9W4Tfg==,email=234@234.com'
+
+axios.interceptors.request.use(
+  config => {
+    if (token) { // 判断是否存在token，如果存在的话，则每个http header都加上token
+      config.headers.Authorization = `Token ${token}`
+    }
+    return config
+  },
+  err => {
+    return Promise.reject(err)
+  })
+
 export default {
   getTags () {
-    return axios.get('http://localhost:3000/v1/tags')
-                  .then(response => response.data)
-                    .catch(error => console.log(error))
+    return axios.get(basicUrl + '/v1/tags')
+      .then(response => response.data)
+      .catch(error => console.log(error))
   },
   getPages (pageNumber) {
-    return axios.get(`http://localhost:3000/v1/paging/${pageNumber}`)
-                  .then(response => response.data)
-                    .catch(error => console.log(error))
+    return axios.get(basicUrl + `/v1/paging/${pageNumber}`)
+      .then(response => response.data)
+      .catch(error => console.log(error))
   },
   getPagesDate () {
-    return axios.get('http://localhost:3000/v1/pages_date_total')
-                  .then(response => response.data)
-                    .catch(error => console.log(error))
+    return axios.get(basicUrl + '/v1/pages_date_total')
+      .then(response => response.data)
+      .catch(error => console.log(error))
+  },
+  getPageContent (pageId) {
+    return axios.get(basicUrl + `/v1/pages/${pageId}`)
+      .then(response => response.data)
+      .catch(error => console.log(error))
+  },
+  getCategory () {
+    return axios.get(basicUrl + `/v1/category`)
+      .then(response => response.data)
+      .catch(error => console.log(error))
+  },
+  createPage (payload) {
+    return axios.post(basicUrl + `/v1/user/${payload.userId}/pages`, payload.data)
+      .then(response => response.data)
+      .catch(error => console.log(error))
   }
 }

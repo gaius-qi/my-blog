@@ -18,7 +18,7 @@ import {
 } from 'vuex'
 
 export default {
-  mounted () {
+  created () {
     this.getPagesDateInfo()
   },
   computed: {

@@ -59,6 +59,7 @@ export default {
       if (this.index !== page) {
         this.index = page
         this.$emit('change', this.index)
+        window.scrollTo(0, 705)
       }
     }
   },
@@ -159,7 +160,7 @@ export default {
       cursor default
     &.pager-btn--current
       background-color #2c3e50
-      color#fff
+      color #fff
       position relative
       z-index 1
       border-color #2c3e50

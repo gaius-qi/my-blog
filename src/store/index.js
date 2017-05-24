@@ -17,7 +17,13 @@ const state = {
     meta: {}
   },
   // 归档时间和各时间段文章个数
-  pages_date: []
+  pages_date: [],
+  // id对应的文章
+  page: {},
+  // category
+  category: [],
+  // 当前页
+  current_page: 1
 }
 
 Vue.use(Vuex)
