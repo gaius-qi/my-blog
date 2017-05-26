@@ -30,7 +30,9 @@
 
   <main role="main">
     <div class="content-wrap">
-      <router-view></router-view>
+      <transition name="slide-fade">
+        <router-view></router-view>
+      </transition>
     </div>
     <aside role="complementary">
       <person-abstract></person-abstract>
@@ -131,4 +133,20 @@ Add "scoped" attribute to limit CSS to this component only
       &:last-child
         margin-top -1rem
 
+// 过渡时注意进入和离开组件同时执行动画，必须离开组件动画执行完，进入组件执行剩余的时间动画。
+// 所以离开续建1s，进入组件2s。实际上展示动画时间是各一秒
+// 定义离开过渡的结束状态。在离开过渡被触发时生效，在 transition/animation完成之后移除。
+  .slide-fade-enter-active
+    transition all 2s ease
+// 定义离开过渡的结束状态。在离开过渡被触发时生效，在 transition/animation完成之后移除。
+  .slide-fade-leave-active
+    transition all 1s ease
+// 过渡时一直添加在离开组件的calss
+  .slide-fade-leave-active
+    transform translate3d(80rem,0,0)
+    opacity 0
+// 定义进入过渡的开始状态。在元素被插入时生效，在下一个帧移除。
+  .slide-fade-enter
+    transform translate3d(-240rem,0,0)
+    opacity 0
 </style>

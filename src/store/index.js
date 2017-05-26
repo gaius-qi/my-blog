@@ -22,8 +22,14 @@ const state = {
   page: {},
   // category
   category: [],
-  // 当前页
-  current_page: 1
+  // 当前页(分页的时候记录当前页， 退回显示summary列表的时候， created的时候请求的是当前页码的数据)
+  current_page: 1,
+  // 文章点击数
+  page_click_count: 0,
+  // 某时间段的所有文章 （归档）
+  archive_pages: [],
+  // 某标签对应的所有文章
+  tag_pages: []
 }
 
 Vue.use(Vuex)

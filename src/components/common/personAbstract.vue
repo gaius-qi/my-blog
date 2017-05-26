@@ -1,12 +1,16 @@
 <template>
 <div class="container">
   <img class="avatar" src="../../assets/image/img03.png"></img>
-  <router-link :to="{ path: '/user/' + 2 + '/pages' }"><h3 class="nick-name" @click="scroll">Isaac</h3></router-link>
+  <router-link :to="{ path: '/user/' + 2 + '/pages' }">
+    <h3 class="nick-name" @click="scroll">Isaac</h3>
+  </router-link>
   <p class="desc">Fear always springs from ignorance.</p>
   <div class="post-info">
     <div class="info-inner">
-      <div class="info-num">{{page_count_total}}</div>
-      <div class="info-name">文章</div>
+      <router-link :to="{ path: '/' }">
+        <div class="info-num"  @click="scroll">{{page_count_total}}</div>
+        <div class="info-name">文章</div>
+      </router-link>
     </div>
     <div class="info-inner">
       <div class="info-num">{{category_count}}</div>
@@ -40,6 +44,7 @@ import { mapActions, mapGetters } from 'vuex'
 export default {
   created () {
     this.get_tags_info()
+    this.get_pages_info(1)
   },
   computed: {
     ...mapGetters([
@@ -50,7 +55,8 @@ export default {
   },
   methods: {
     ...mapActions({
-      get_tags_info: 'getTagsInfo'
+      get_tags_info: 'getTagsInfo',
+      get_pages_info: 'getPagesInfo'
     }),
     scroll () {
       window.scrollTo(0, 705)
@@ -96,6 +102,10 @@ export default {
 .info-num
   font-size 1.2rem
   font-weight bold
+  transition all 0.5s ease
+  &:hover
+    transform scaleX(1.2) scaleY(1.2)
+    color #00fa9a
 
 .post-info .info-inner:·nth-child(1)
   border none

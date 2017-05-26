@@ -16,7 +16,17 @@ export default {
   [types.GET_GATEGORY] (state, category) {
     state.category = category
   },
+  // 设置当前页
   [types.SET_CURRENT_PAGE] (state, currentPage) {
     state.current_page = currentPage
+  },
+  [types.GET_PAGE_CLICK_COUNT] (state, clickCount) {
+    state.page_click_count = clickCount
+  },
+  [types.GET_ARCHIVE_PAGES] (state, pages) {
+    state.archive_pages = pages
+  },
+  [types.GET_TAG_PAGES] (state, pages) {
+    state.tag_pages = pages
   }
 }

@@ -3,8 +3,11 @@
   <h3>归档</h3>
   <hr class="divider" />
   <ul class="list">
-    <!-- <li v-for="dateNum in dataNums"><a href="#">{{dateNum}}2017年5月(<span>1</span>)</a></li> -->
-    <li v-for="item in dateNums"><a href="#">{{`${item[0]}年${item[1]}月`}}(<span>{{item[2]}}</span>)</a></li>
+    <li v-for="item in dateNums">
+      <router-link :to="{ path: `/archive_pages/${item[0]}${item[1]}`}">
+        <a @click="scroll">{{`${item[0]}年${item[1]}月`}}(<span>{{item[2]}}</span>)</a>
+      </router-link>
+    </li>
   </ul>
 
 </div>
@@ -32,7 +35,11 @@ export default {
       let result = []
       for (let [key, value] of this.pages_date) {
         let row = []
-        row.push(...[key.slice(0, 4), parseInt(key.slice(4)), value])
+        if (key.slice(4) <= '9') {
+          row.push(...[key.slice(0, 4), '0' + parseInt(key.slice(4)), value])
+        } else {
+          row.push(...[key.slice(0, 4), parseInt(key.slice(4)), value])
+        }
         result.push(row)
       }
       return result
@@ -41,7 +48,10 @@ export default {
   methods: {
     ...mapActions([
       'getPagesDateInfo'
-    ])
+    ]),
+    scroll () {
+      window.scrollTo(0, 705)
+    }
   }
 }
 </script>

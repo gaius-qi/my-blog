@@ -44,5 +44,27 @@ export default {
     return axios.post(basicUrl + `/v1/user/${payload.userId}/pages`, payload.data)
       .then(response => response.data)
       .catch(error => console.log(error))
+  },
+  getPageClickCount (pageId) {
+    return axios.get(basicUrl + `/v1/page_click_count/${pageId}`)
+      .then(response => response.data)
+      .catch(error => console.log(error))
+  },
+  clickPage (pageId) {
+    return axios.get(basicUrl + `/v1/click_page/${pageId}`)
+      .then(response => response.data)
+      .catch(error => console.log(error))
+  },
+  getArchivePages (date) {
+    return axios.get(basicUrl + `/v1/archive_pages/${date}`)
+      .then(response => response.data)
+      .catch(error => console.log(error))
+  },
+  // 注意请求的时候夹杂在url中的参数不能有'.'，因为不能转义
+  // （例如tagName为Vue.js就不可以，解析的时候直接就只传Vue了）后面的.js就被省略了
+  getTagPages (tagName) {
+    return axios.get(basicUrl + `/v1/tag_pages/${tagName}`)
+      .then(response => response.data)
+      .catch(error => console.log(error))
   }
 }

@@ -22,9 +22,6 @@
     "evil-icons": "^1.9.0",
     "fs": "^0.0.1-security",
     "marked": "^0.3.6",
-    "style-loader": "^0.17.0",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1",
     "vue": "^2.2.6",
     "vue-router": "^2.3.1",
     "vuex": "^2.3.1"

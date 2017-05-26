@@ -1,3 +1,5 @@
+@import './assets/package/font-awesome-4.7.0/css/font-awesome.min.css'
+
 @font-face
   font-family 'SentyWEN2017'
   //因为本文件在APP.vue中引用的，所以相对路径是相对于APP.vue文件的路径
@@ -11,6 +13,18 @@
 @font-face
   font-family 'SentyZHAO'
   src url('./assets/font/Senty/SentyZHAO.ttf') format('truetype')
+
+@font-face
+  font-family 'SentyCHALK'
+  src url('./assets/font/Senty/SentyCHALKoriginal.ttf') format('truetype')
+
+@font-face
+  font-family 'SentPea'
+  src url('./assets/font/Senty/SentyPea.ttf') format('truetype')
+
+@font-face
+  font-family 'SentySnow'
+  src url('./assets/font/Senty/SentySnowMountain.ttf') format('truetype')
 
 #app
   font-family 'Avenir', Helvetica, Arial, sans-serif
@@ -54,3 +68,7 @@ a
 
 .icon--ei-sc-github, .icon--ei-sc-facebook, .icon--ei-sc-twitter, .icon--ei-user
   transition all 0.5s linear
+
+.CodeRay
+  .code
+    overflow: scroll;

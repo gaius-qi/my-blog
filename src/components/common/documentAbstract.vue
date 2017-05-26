@@ -106,11 +106,11 @@ export default {
             value: 5352
           },
           {
-            name: 'Vue.js',
+            name: 'Vue',
             value: 6987
           },
           {
-            name: 'React.js',
+            name: 'React',
             value: 7965
           },
           {
@@ -146,8 +146,8 @@ export default {
     })
 
     wordsChart.on('click', param => {
-      let name = param.name
-      alert(name)
+      window.scrollTo(0, 705)
+      this.$router.push(`/tag_pages/${param.name}`)
     })
   },
   computed: {
