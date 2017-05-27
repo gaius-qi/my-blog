@@ -59,5 +59,10 @@ export default {
   async getTagPagesInfo ({commit, state}, tagName) {
     let pages = await io.getTagPages(tagName)
     commit(types.GET_TAG_PAGES, pages)
+  },
+  // 某个种类对应的所有文章
+  async getCategoryPagesInfo ({commit, state}, categoryId) {
+    let pages = await io.getCategoryPages(categoryId)
+    commit(types.GET_CATEGORY_PAGES, pages)
   }
 }

@@ -13,7 +13,9 @@
     <footer>
       <em class="bottom-tag">
         <i class="fa fa-tags" aria-hidden="true"></i>&nbsp;
-        <span class="tags" v-for="tag in tags">#{{tag}}</span>
+        <span v-for="tag in tags">
+          <router-link class="tags" :to="{path: `/tag_pages/${tag}`}">#{{tag}}</router-link>
+        </span>
       </em>
       <div class="release-time">
         <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;
@@ -65,7 +67,7 @@ export default {
     ]),
     clickPage () {
       this.clickPageInfo(this.pageId)
-      window.scrollTo(0, 705)
+      window.scrollTo(0, 726)
     }
   }
 }
@@ -156,7 +158,9 @@ button
   float right
   margin-right 3.2rem
 
-span
+.tags
   margin-right 0.5rem
-
+  transition all .5s ease
+  &:hover
+    color #00fa9a
 </style>

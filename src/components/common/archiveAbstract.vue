@@ -50,7 +50,7 @@ export default {
       'getPagesDateInfo'
     ]),
     scroll () {
-      window.scrollTo(0, 705)
+      window.scrollTo(0, 726)
     }
   }
 }

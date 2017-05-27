@@ -16,8 +16,8 @@ export default {
     ...mapActions([
       'getTestInfo'
     ]),
-    scrollWindow() {
-      window.scrollTo(0, 705)
+    scrollWindow () {
+      window.scrollTo(0, 726)
     }
   },
   computed: {
@@ -30,7 +30,11 @@ export default {
 
 <style lang="stylus" scoped>
   .down
+    margin-top 2rem
     background rgba(0,0,0,0)
     border 0
     outline none
+    transition all .3s linear
+    &:hover
+      transform scale(3, 3)
 </style>

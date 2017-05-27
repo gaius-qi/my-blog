@@ -1,6 +1,6 @@
 <template>
 <nav role="navigation">
-  <a href="#" class="navbar">Home</a>
+  <router-link :to="{ path: '/' }"><a href="#" class="navbar">Home</a></router-link>
   <a href="#" class="navbar">Archive</a>
   <a href="#" class="navbar">About</a>
   <div class="bar">
@@ -26,14 +26,15 @@ export default {}
     height 3rem
     left 1rem
     top 1rem
+    z-index 1
 
   .navbar
     padding-left 1.5rem
-    color #2c3e50
+    color #00fa9a
     font-weight bold
     text-decoration none
     &:hover
-      color #00fa9a
+      color #FA8072
 
   .bar
     margin-left 58rem

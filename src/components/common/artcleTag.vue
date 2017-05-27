@@ -52,7 +52,7 @@ export default {
       'getTagPagesInfo'
     ]),
     goBack () {
-      window.scrollTo(0, 705)
+      window.scrollTo(0, 726)
       this.$router.go(-1)
     }
   },
@@ -67,13 +67,16 @@ export default {
   watch: {
     $route () {
       this.getTagPagesInfo(this.$route.params.tag_name)
-      window.scrollTo(0, 705)
+      window.scrollTo(0, 726)
     }
   }
 }
 </script>
 
-<style lang="stylus" scoped>·
+<style lang="stylus" scoped>
+.container
+  background none
+
 .paging
   margin-top 2.8rem
 

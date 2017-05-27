@@ -1,16 +1,15 @@
 <template>
-<div class="container">
-
+  <div class="container-all">
+  <!-- 应该放入/static文件夹中，因为vue-cli配置webpack不参与打包 -->
+  <video autoplay loop poster="/static/image/background.png" id="bgvid">
+    <source src="/static/video/background.mp4" type="video/mp4">
+  </video>
+  <nav-top></nav-top>
   <header role="banner">
-    <nav-top></nav-top>
     <h1 class="animated rubberBand" id="letter">Fear always springs from ignorance.</h1>
-    <figure>
-      <img class="photo animated rubberBand" src="../assets/image/img02.jpg"></img>
-      <figcaption>
-        <h2 class="animated rubberBand">Isaac's Blog</h2>
-      </figcaption>
-    </figure>
-    <aside role="complementary">
+    <div class="ityped-style"><span id="ityped"></span></div>
+    <h2 class="animated rubberBand">Isaac's Blog</h2>
+    <aside class="link-icon" role="complementary">
       <a href="https://github.com/qwbtc" target="_blank">
         <div class="animated rubberBand" data-icon="ei-sc-github" data-size="m"></div>
       </a>
@@ -25,30 +24,32 @@
     <home-down-button></home-down-button>
     <home-up-button></home-up-button>
   </header>
+  <div class="container">
 
-  <hr class="divider" />
+    <hr class="divider" />
 
-  <main role="main">
-    <div class="content-wrap">
-      <transition name="slide-fade">
-        <router-view></router-view>
-      </transition>
-    </div>
-    <aside role="complementary">
-      <person-abstract></person-abstract>
-      <document-abstract></document-abstract>
-      <archive-abstract></archive-abstract>
-    </aside>
-  </main>
+    <main role="main">
+      <div class="content-wrap">
+        <transition name="slide-fade">
+          <router-view></router-view>
+        </transition>
+      </div>
+      <aside role="complementary">
+        <person-abstract></person-abstract>
+        <document-abstract></document-abstract>
+        <archive-abstract></archive-abstract>
+      </aside>
+    </main>
 
-  <hr class="divider divider-last" />
+    <hr class="divider divider-last" />
 
-  <footer role="contentinfo">
-    <p>© 2016 &nbsp; Ö &nbsp; Isaac</p>
-    <p>All &nbsp; Rights &nbsp; Reserved</p>
+    <footer role="contentinfo">
+      <p>© 2016 &nbsp; Ö &nbsp; Isaac</p>
+      <p>All &nbsp; Rights &nbsp; Reserved</p>
 
-  </footer>
+    </footer>
 
+  </div>
 </div>
 </template>
 
@@ -59,10 +60,24 @@ import NavTop from './common/nav.vue'
 import PersonAbstract from './common/personAbstract.vue'
 import DocumentAbstract from './common/documentAbstract.vue'
 import ArchiveAbstract from './common/archiveAbstract.vue'
-import { mapActions, mapGetters } from 'vuex'
+import { init } from 'ityped'
 
 export default {
   name: 'home',
+  mounted () {
+    init('#ityped', {
+      strings: ['Never forget that until the day',
+        'When God shall deign',
+        'To reveal the future to man',
+        'All human wisdom is summed up',
+        'In these two words',
+        'Wait and Hope'],
+      typeSpeed: 100,
+      backSpeed: 30,
+      backDelay: 1500,
+      loop: true
+    })
+  },
   components: {
     'homeDownButton': HomeDownButton,
     'navTop': NavTop,
@@ -76,19 +91,33 @@ export default {
 
 Add "scoped" attribute to limit CSS to this component only
 <style lang="stylus" scoped>
+  .container-all
+    width 100%
+    height auto
+
   .container
     background url(../assets/image/img01.png) repeat
     background-size 100% 46rem
     height auto
     text-align center
-    scroll-behavior smooth
+
+  header
+    position: absolute;
+    top 0
+    left: 0
+    width 100%
+    text-align center
+    color #00fa9a
 
   h1
-    display inline-block
-    margin 8rem 0 1rem 0
+    margin 12rem 0 1rem 0
     font-size 2rem
     font-weight lighter
     font-family Chalkduster, fantasy
+
+  h2
+    margin-top 2rem
+    color #00fa9a
 
   .photo
     display block
@@ -98,7 +127,7 @@ Add "scoped" attribute to limit CSS to this component only
     margin 0 auto
 
   .divider
-    margin 5.5rem 0 0 0
+    margin-top -0.3rem
     height 3.3rem
     border 0
     box-shadow inset 0 3.3rem 3.3rem -3.3rem rgba(0, 0, 0, 1)
@@ -149,4 +178,17 @@ Add "scoped" attribute to limit CSS to this component only
   .slide-fade-enter
     transform translate3d(-240rem,0,0)
     opacity 0
+
+  video#bgvid
+    min-width 100%
+    min-height 100%
+    width 100%
+    height auto
+    z-index -100
+
+  .ityped-style
+    font-family Chalkduster
+    color #00fa9a
+    font-size 1.2rem
+    margin-top 3rem
 </style>

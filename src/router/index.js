@@ -6,6 +6,9 @@ import ArtcleContent from '../components/common/artcleContent'
 import CreateArticle from '../components/common/createArtcle'
 import ArtcleArchive from '../components/common/artcleArchive'
 import ArtcleTag from '../components/common/artcleTag'
+import TagContainer from '../components/common/tagContainer'
+import CategoryContainer from '../components/common/categoryContainer'
+import ArtcleCategory from '../components/common/artcleCategory'
 
 Vue.use(Router)
 
@@ -42,6 +45,18 @@ export default new Router({
         {
           path: '/tag_pages/:tag_name',
           component: ArtcleTag
+        },
+        {
+          path: '/tags',
+          component: TagContainer
+        },
+        {
+          path: '/category',
+          component: CategoryContainer
+        },
+        {
+          path: '/category_pages/:category_id',
+          component: ArtcleCategory
         }
       ]
     }

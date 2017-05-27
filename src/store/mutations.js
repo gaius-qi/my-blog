@@ -28,5 +28,8 @@ export default {
   },
   [types.GET_TAG_PAGES] (state, pages) {
     state.tag_pages = pages
+  },
+  [types.GET_CATEGORY_PAGES] (state, pages) {
+    state.category_pages = pages
   }
 }

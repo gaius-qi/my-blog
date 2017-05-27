@@ -74,7 +74,7 @@ export default {
         }
       }
       this.createPageInfo({userId: 2, data: params})
-      window.scrollTo(0, 705)
+      window.scrollTo(0, 726)
     }
   }
 }

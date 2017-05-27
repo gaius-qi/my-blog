@@ -13,12 +13,16 @@
       </router-link>
     </div>
     <div class="info-inner">
-      <div class="info-num">{{category_count}}</div>
-      <div class="info-name">分类</div>
+      <router-link :to="{ path: `/category` }">
+        <div class="info-num" @click="scroll">{{category_count}}</div>
+        <div class="info-name">分类</div>
+      </router-link>
     </div>
     <div class="info-inner">
-      <div class="info-num">{{tags_count}}</div>
-      <div class="info-name">标签</div>
+      <router-link :to="{ path: '/tags' }">
+        <div class="info-num" @click="scroll">{{tags_count}}</div>
+        <div class="info-name">标签</div>
+      </router-link>
     </div>
   </div>
   <div class="info-links">
@@ -59,7 +63,7 @@ export default {
       get_pages_info: 'getPagesInfo'
     }),
     scroll () {
-      window.scrollTo(0, 705)
+      window.scrollTo(0, 726)
     }
   }
 }

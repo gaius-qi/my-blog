@@ -29,7 +29,9 @@ const state = {
   // 某时间段的所有文章 （归档）
   archive_pages: [],
   // 某标签对应的所有文章
-  tag_pages: []
+  tag_pages: [],
+  // 某种类对应的所有文章
+  category_pages: []
 }
 
 Vue.use(Vuex)

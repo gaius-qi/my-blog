@@ -66,5 +66,10 @@ export default {
     return axios.get(basicUrl + `/v1/tag_pages/${tagName}`)
       .then(response => response.data)
       .catch(error => console.log(error))
+  },
+  getCategoryPages (categoryId) {
+    return axios.get(basicUrl + `/v1/category_pages/${categoryId}`)
+      .then(response => response.data)
+      .catch(error => console.log(error))
   }
 }

@@ -146,7 +146,7 @@ export default {
     })
 
     wordsChart.on('click', param => {
-      window.scrollTo(0, 705)
+      window.scrollTo(0, 726)
       this.$router.push(`/tag_pages/${param.name}`)
     })
   },
