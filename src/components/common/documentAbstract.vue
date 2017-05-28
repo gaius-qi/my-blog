@@ -10,6 +10,7 @@
 import {mapState} from 'vuex'
 import echarts from 'echarts'
 import 'echarts-wordcloud'
+import smoothScroll from 'smoothscroll'
 
 export default {
   mounted () {
@@ -146,7 +147,7 @@ export default {
     })
 
     wordsChart.on('click', param => {
-      window.scrollTo(0, 726)
+      smoothScroll(736, 600)
       this.$router.push(`/tag_pages/${param.name}`)
     })
   },

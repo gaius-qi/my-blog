@@ -1,8 +1,16 @@
 <template>
 <nav role="navigation">
-  <router-link :to="{ path: '/' }"><a href="#" class="navbar">Home</a></router-link>
-  <a href="#" class="navbar">Archive</a>
-  <a href="#" class="navbar">About</a>
+  <div class="reminder-bar">
+    <router-link :to="{ path: '/' }" class="navbar">
+      Home
+    </router-link>
+    <router-link :to="{ path: '/' }" class="navbar">
+      Archive
+    </router-link>
+    <router-link :to="{ path: '/' }" class="navbar">
+      About
+    </router-link>
+  </div>
   <div class="bar">
     <a href="#">
       <div data-icon="ei-bell" data-size="s"></div>
@@ -22,6 +30,8 @@ export default {}
   nav
     position absolute
     display flex
+    justify-content space-between
+    width 98%
     font-size 1rem
     height 3rem
     left 1rem
@@ -33,9 +43,22 @@ export default {}
     color #00fa9a
     font-weight bold
     text-decoration none
+    animation color-change 5s linear
+    animation-iteration-count infinite
+    transition all .5s ease
     &:hover
-      color #FA8072
+      font-size 1.2rem
 
   .bar
-    margin-left 58rem
+    margin-right 1rem
+
+  @keyframes color-change
+    0%, 100%
+        color #FF0000
+    25%
+        color #00FFFF
+    50%
+        color #FFFF00
+    75%
+        color #00fa9a
 </style>

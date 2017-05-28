@@ -7,10 +7,11 @@
 </template>
 
 <script>
+import smoothScroll from 'smoothscroll'
 export default {
   methods: {
     scrollWindow () {
-      window.scrollTo(0, 0)
+      smoothScroll(0, 600)
     }
   }
 }

@@ -44,6 +44,7 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
+import smoothScroll from 'smoothscroll'
 
 export default {
   created () {
@@ -63,7 +64,7 @@ export default {
       get_pages_info: 'getPagesInfo'
     }),
     scroll () {
-      window.scrollTo(0, 726)
+      smoothScroll(736, 600)
     }
   }
 }

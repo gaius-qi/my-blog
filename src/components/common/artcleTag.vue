@@ -43,6 +43,8 @@ import {
   mapState
 } from 'vuex'
 import ArtcleSummary from '../artcle/artcleSummary.vue'
+import smoothScroll from 'smoothscroll'
+
 export default {
   created () {
     this.getTagPagesInfo(this.$route.params.tag_name)
@@ -52,7 +54,7 @@ export default {
       'getTagPagesInfo'
     ]),
     goBack () {
-      window.scrollTo(0, 726)
+      smoothScroll(736, 600)
       this.$router.go(-1)
     }
   },
@@ -67,7 +69,7 @@ export default {
   watch: {
     $route () {
       this.getTagPagesInfo(this.$route.params.tag_name)
-      window.scrollTo(0, 726)
+      smoothScroll(736, 600)
     }
   }
 }

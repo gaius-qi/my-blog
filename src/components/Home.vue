@@ -114,10 +114,20 @@ Add "scoped" attribute to limit CSS to this component only
     font-size 2rem
     font-weight lighter
     font-family Chalkduster, fantasy
+    animation color-change 5s linear
+    animation-iteration-count infinite
+    transition all .5s ease
+    &:hover
+      transform scale(1.2, 1.2)
 
   h2
     margin-top 2rem
     color #00fa9a
+    animation color-change 5s linear
+    animation-iteration-count infinite
+    transition all .5s ease
+    &:hover
+      transform scale(1.2, 1.2)
 
   .photo
     display block
@@ -191,4 +201,19 @@ Add "scoped" attribute to limit CSS to this component only
     color #00fa9a
     font-size 1.2rem
     margin-top 3rem
+    animation color-change 5s linear
+    animation-iteration-count infinite
+    transition all .5s ease
+    &:hover
+      transform scale(1.2, 1.2)
+
+  @keyframes color-change
+    0%, 100%
+        color #FF0000
+    25%
+        color #00FFFF
+    50%
+        color #FFFF00
+    75%
+        color #00fa9a
 </style>

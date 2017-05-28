@@ -27,6 +27,7 @@
 
 <script>
 import { mapActions, mapState } from 'vuex'
+import smoothScroll from 'smoothscroll'
 
 export default {
   // 父子组件传递信息，父组件page-content传递到子组件props中要用驼峰pageContent
@@ -67,7 +68,7 @@ export default {
     ]),
     clickPage () {
       this.clickPageInfo(this.pageId)
-      window.scrollTo(0, 726)
+      smoothScroll(736, 600)
     }
   }
 }

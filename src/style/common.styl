@@ -39,27 +39,38 @@ a
   color #2c3e50
 
 .icon
-  // fill #2c3e50 !important
   border-radius 50%
+  z-index 1
 
 .icon:hover
   fill #FA8072 !important
   background-color #F0FFFF
 
 .icon--m
-  fill #00fa9a !important
+  animation change 5s linear !important
+  animation-iteration-count infinite !important
+  transition all .5s ease
 
 .icon--ei-chevron-down
-  fill #00fa9a !important
+  animation change 5s linear !important
+  animation-iteration-count infinite !important
+  transition all .5s ease
+  &:hover
+    cursor: pointer
 
 .icon--s
-  fill #00fa9a !important
+  animation change 5s linear !important
+  animation-iteration-count infinite !important
+  transition all .5s ease
+  &:hover
+    transform scale(1.5, 1.5)
 
 .icon--ei-arrow-up:hover
   fill #00fa9a !important
 
 .icon-style
   fill #2c3e50 !important
+  animation none !important
   &:hover
     fill #00fa9a !important
 
@@ -85,4 +96,14 @@ a
 
 .CodeRay
   .code
-    overflow: scroll;
+    overflow scroll
+
+@keyframes change
+  0%, 100%
+      fill #FF0000
+  25%
+      fill #00FFFF
+  50%
+      fill #FFFF00
+  75%
+      fill #00fa9a

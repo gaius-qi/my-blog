@@ -14,6 +14,8 @@
 </template>
 
 <script>
+import smoothScroll from 'smoothscroll'
+
 export default {
   name: 'Pagination',
   props: {
@@ -59,7 +61,7 @@ export default {
       if (this.index !== page) {
         this.index = page
         this.$emit('change', this.index)
-        window.scrollTo(0, 726)
+        smoothScroll(736, 600)
       }
     }
   },

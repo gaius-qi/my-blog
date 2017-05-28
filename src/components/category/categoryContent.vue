@@ -7,6 +7,8 @@
 </template>
 
 <script>
+import smoothScroll from 'smoothscroll'
+
 export default {
   props: {
     categoryName: {
@@ -21,7 +23,7 @@ export default {
   },
   methods: {
     scroll () {
-      window.scrollTo(0, 726)
+      smoothScroll(736, 600)
     }
   }
 }

@@ -19,6 +19,7 @@ import {
   mapActions,
   mapState
 } from 'vuex'
+import smoothScroll from 'smoothscroll'
 
 export default {
   created () {
@@ -50,7 +51,7 @@ export default {
       'getPagesDateInfo'
     ]),
     scroll () {
-      window.scrollTo(0, 726)
+      smoothScroll(736, 600)
     }
   }
 }

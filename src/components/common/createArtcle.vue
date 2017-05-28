@@ -26,6 +26,7 @@ import ArtcleEditSummary from '../artcle/artcleEditSummary'
 import ArtcleEditMd from '../artcle/artcleEditMd'
 import ArtcleEditCategory from '../artcle/artcleEditCategory.vue'
 import ArtcleEditTag from '../artcle/artcleEditTag'
+import smoothScroll from 'smoothscroll'
 
 export default {
   data () {
@@ -74,7 +75,7 @@ export default {
         }
       }
       this.createPageInfo({userId: 2, data: params})
-      window.scrollTo(0, 726)
+      smoothScroll(736, 600)
     }
   }
 }
