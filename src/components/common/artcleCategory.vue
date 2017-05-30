@@ -54,7 +54,7 @@ export default {
       'getCategoryPagesInfo'
     ]),
     goBack () {
-      smoothScroll(736, 600)
+      smoothScroll(743, 600)
       this.$router.go(-1)
     }
   },
@@ -69,7 +69,7 @@ export default {
   watch: {
     $route () {
       this.getCategoryPagesInfo(this.$route.params.category_id)
-      smoothScroll(736, 600)
+      smoothScroll(743, 600)
     }
   }
 }

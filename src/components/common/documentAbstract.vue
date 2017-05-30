@@ -147,7 +147,7 @@ export default {
     })
 
     wordsChart.on('click', param => {
-      smoothScroll(736, 600)
+      smoothScroll(743, 600)
       this.$router.push(`/tag_pages/${param.name}`)
     })
   },

@@ -26,4 +26,6 @@ export default {
     right 0
     bottom 0
     z-index 9999
+    &:hover
+      cursor pointer
 </style>

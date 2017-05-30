@@ -1,10 +1,12 @@
 <template>
 <div class="container">
   <img class="avatar" src="../../assets/image/img03.png"></img>
-  <router-link :to="{ path: '/user/' + 2 + '/pages' }">
+  <a @click="create_page">
     <h3 class="nick-name" @click="scroll">Isaac</h3>
-  </router-link>
-  <p class="desc">Fear always springs from ignorance.</p>
+  </a>
+  <a @click="login_out">
+    <p class="desc">Fear always springs from ignorance.</p>
+  </a>
   <div class="post-info">
     <div class="info-inner">
       <router-link :to="{ path: '/' }">
@@ -45,7 +47,9 @@
 <script>
 import {
   mapActions,
-  mapGetters
+  mapGetters,
+  mapState,
+  mapMutations
 } from 'vuex'
 import smoothScroll from 'smoothscroll'
 
@@ -59,6 +63,9 @@ export default {
       'tags_count',
       'page_count_total',
       'category_count'
+    ]),
+    ...mapState([
+      'user'
     ])
   },
   methods: {
@@ -66,8 +73,22 @@ export default {
       get_tags_info: 'getTagsInfo',
       get_pages_info: 'getPagesInfo'
     }),
+    ...mapMutations([
+      'DELETE_SESSION'
+    ]),
     scroll () {
-      smoothScroll(736, 600)
+      smoothScroll(743, 600)
+    },
+    create_page (e) {
+      if (this.user.login) {
+        this.$router.push('/user/' + this.user.user.id + '/pages')
+      } else {
+        e.preventDefault()
+      }
+    },
+    login_out () {
+      // 登出State中user置空login = false, localStroage中user也清空
+      this.DELETE_SESSION()
     }
   }
 }
@@ -114,6 +135,7 @@ export default {
   &:hover
     transform scaleX(1.2) scaleY(1.2)
     color #00fa9a
+    cursor pointer
 
 .post-info .info-inner:·nth-child(1)
   border none
@@ -132,4 +154,7 @@ span
   font-weight bold
   font-size 0.8rem
   margin-left -0.3rem
+
+a:hover
+  cursor default
 </style>

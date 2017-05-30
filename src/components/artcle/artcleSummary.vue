@@ -68,7 +68,7 @@ export default {
     ]),
     clickPage () {
       this.clickPageInfo(this.pageId)
-      smoothScroll(736, 600)
+      smoothScroll(743, 600)
     }
   }
 }

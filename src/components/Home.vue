@@ -20,7 +20,9 @@
         <a href="https://twitter.com/BobDylan0313" target="_blank">
           <div class="animated rubberBand" data-icon="ei-sc-twitter" data-size="m"></div>
         </a>
-        <div class="animated rubberBand" data-icon="ei-user" data-size="m"></div>
+        <a href="/cv" target="_blank">
+          <div class="animated rubberBand" data-icon="ei-user" data-size="m"></div>
+        </a>
       </aside>
       <home-down-button></home-down-button>
       <home-up-button></home-up-button>
@@ -125,6 +127,7 @@ Add "scoped" attribute to limit CSS to this component only
     transition all .5s ease
     &:hover
       transform scale(1.2, 1.2)
+      cursor default
 
   h2
     margin-top 2rem
@@ -134,6 +137,7 @@ Add "scoped" attribute to limit CSS to this component only
     transition all .5s ease
     &:hover
       transform scale(1.2, 1.2)
+      cursor default
 
   .photo
     display block
@@ -218,6 +222,7 @@ Add "scoped" attribute to limit CSS to this component only
     transition all .5s ease
     &:hover
       transform scale(1.2, 1.2)
+      cursor default
 
   @keyframes color-change
     0%, 100%

@@ -4,67 +4,75 @@
     <router-link :to="{ path: '/' }" class="navbar">
       Home
     </router-link>
-    <router-link :to="{ path: '/' }" class="navbar">
-      Archive
-    </router-link>
-    <router-link :to="{ path: '/' }" class="navbar">
+    <a href="/cv" target="_blank" class="navbar">
       About
-    </router-link>
+    </a>
+    <el-button class="login" type="text" @click="dialogFormVisible = true">
+      login in
+    </el-button>
   </div>
   <div class="bar">
-    <el-button type="text" @click="dialogFormVisible = true">
+    <a href="#">
       <div data-icon="ei-gear" data-size="s"></div>
-    </el-button>
-    <el-dialog title="Sign in" :visible.sync="dialogFormVisible" class="el-dialog-change">
-      <el-form :model="form">
-        <el-form-item label="email" :label-width="formLabelWidth">
-          <el-input v-model="form.email" auto-complete="off"></el-input>
-        </el-form-item>
-        <el-form-item label="password" :label-width="formLabelWidth">
-          <el-input v-model="form.password" auto-complete="off" type="password"></el-input>
-        </el-form-item>
-      </el-form>
-      <div slot="footer" class="dialog-footer">
-        <el-button @click="dialogFormVisible = false">取 消</el-button>
-        <el-button type="primary" @click="signIn">确 定</el-button>
-      </div>
-    </el-dialog>
+    </a>
     <a href="https://www.google.com.hk/" target="_blank">
       <div data-icon="ei-search" data-size="s"></div>
     </a>
   </div>
+  <el-dialog title="登陆" :visible.sync="dialogFormVisible" class="el-dialog-change">
+    <el-form :model="form">
+      <el-form-item label="邮箱" :label-width="formLabelWidth">
+        <el-input v-model="form.email" auto-complete="off"></el-input>
+      </el-form-item>
+      <el-form-item label="密码" :label-width="formLabelWidth">
+        <el-input v-model="form.password" auto-complete="off" type="password"></el-input>
+        {{this.errorMsg}}
+      </el-form-item>
+    </el-form>
+    <div slot="footer" class="dialog-footer">
+      <el-button @click="dialogFormVisible = false">取 消</el-button>
+      <el-button type="primary" @click="signIn">确 定</el-button>
+    </div>
+  </el-dialog>
 </nav>
 </template>
 
 <script>
 import {
-  mapActions
+  mapActions,
+  mapState
 } from 'vuex'
 export default {
-  data () {
+  data() {
     return {
       dialogFormVisible: false,
       form: {
         email: '',
         password: ''
       },
-      formLabelWidth: '80px'
+      formLabelWidth: '60px',
+      errorMsg: ''
     }
   },
   methods: {
     ...mapActions([
       'createSessionInfo'
     ]),
-    signIn () {
+    signIn() {
       this.dialogFormVisible = false
-      let user = {
+      let userJson = {
         'user': {
           'email': this.form.email,
           'password': this.form.password
         }
       }
-      this.createSessionInfo(user)
+      this.createSessionInfo(userJson)
     }
+  },
+  computed: {
+    ...mapState([
+      'user'
+    ])
   }
 }
 </script>
@@ -94,7 +102,14 @@ export default {
 
   .bar
     margin-right 1rem
-    margin-top -0.5rem
+    margin-top 0.5rem
+
+  .login
+    opacity 0
+    margin-left 10rem
+    &:hover
+      cursor default
+
 
   @keyframes color-change
     0%, 100%

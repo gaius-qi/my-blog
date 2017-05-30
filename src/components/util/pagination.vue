@@ -61,7 +61,7 @@ export default {
       if (this.index !== page) {
         this.index = page
         this.$emit('change', this.index)
-        smoothScroll(736, 600)
+        smoothScroll(743, 600)
       }
     }
   },

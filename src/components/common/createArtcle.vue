@@ -19,7 +19,8 @@
 
 <script>
 import {
-  mapActions
+  mapActions,
+  mapState
 } from 'vuex'
 import ArtcleEditTitle from '../artcle/artcleEditTitle'
 import ArtcleEditSummary from '../artcle/artcleEditSummary'
@@ -44,6 +45,11 @@ export default {
     'artcleEditMd': ArtcleEditMd,
     'artcleEditCategory': ArtcleEditCategory,
     'artcleEditTag': ArtcleEditTag
+  },
+  computed: {
+    ...mapState([
+      'user'
+    ])
   },
   methods: {
     ...mapActions([
@@ -74,8 +80,8 @@ export default {
           'tags': this.tags
         }
       }
-      this.createPageInfo({userId: 2, data: params})
-      smoothScroll(736, 600)
+      this.createPageInfo({userId: 2, data: params, userAuth: this.user})
+      smoothScroll(743, 600)
     }
   }
 }

@@ -1,5 +1,5 @@
 import * as types from './mutation-types'
-import io from '../service/get-data/common'
+import io from '../service/common'
 import router from '../router'
 
 export default {

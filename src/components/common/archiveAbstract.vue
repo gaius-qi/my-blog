@@ -51,7 +51,7 @@ export default {
       'getPagesDateInfo'
     ]),
     scroll () {
-      smoothScroll(736, 600)
+      smoothScroll(743, 600)
     }
   }
 }

@@ -35,5 +35,20 @@ export default {
   [types.CREATE_SESSION] (state, user) {
     state.user = user.data
     state.user.login = true
+    // 保存一定时间user信息（包括token等） 过期时间为7天
+    let time = new Date()
+    time = time.setDate(time.getDate() + 7)
+    let userInfo = {
+      'data': user.data,
+      'time': time
+    }
+    localStorage.setItem('user', JSON.stringify(userInfo))
+  },
+  // login out
+  [types.DELETE_SESSION] (state) {
+    if (state.user.login) {
+      state.user = {login: false}
+      localStorage.removeItem('user')
+    }
   }
 }

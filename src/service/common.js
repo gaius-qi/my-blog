@@ -1,18 +1,21 @@
 import axios from 'axios'
-
 const basicUrl = 'http://localhost:3000'
-const token = 'token=QsGxgMdiX+mOreeTdObQXcl4MyIhOm+oZ6MLJ0gympfAVqo4VF6gXq5/NZEBG9VKSOiYgnMeeSMQu9It9W4Tfg==,email=234@234.com'
+// 拦截器
+// axios.interceptors.request.use(
+//   config => {
+//     if (token) { // 判断是否存在token，如果存在的话，则每个http header都加上token
+//       config.headers.Authorization = `Token token=${token}`
+//     }
+//     return config
+//   },
+//   err => {
+//     return Promise.reject(err)
+//   })
 
-axios.interceptors.request.use(
-  config => {
-    if (token) { // 判断是否存在token，如果存在的话，则每个http header都加上token
-      config.headers.Authorization = `Token ${token}`
-    }
-    return config
-  },
-  err => {
-    return Promise.reject(err)
-  })
+function addToken (token, email) {
+  let userToken = `token=${token},email=${email}`
+  return axios.create({headers: {'Authorization': `Token ${userToken}`}})
+}
 
 export default {
   getTags () {
@@ -41,7 +44,8 @@ export default {
       .catch(error => console.log(error))
   },
   createPage (payload) {
-    return axios.post(basicUrl + `/v1/user/${payload.userId}/pages`, payload.data)
+    let instance = addToken(payload.userAuth.token, payload.userAuth.email)
+    return instance.post(basicUrl + `/v1/user/${payload.userId}/pages`, payload.data)
       .then(response => response.data)
       .catch(error => console.log(error))
   },

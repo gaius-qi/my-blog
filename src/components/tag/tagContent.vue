@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     scroll () {
-      smoothScroll(736, 600)
+      smoothScroll(743, 600)
     }
   }
 }

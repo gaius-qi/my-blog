@@ -54,7 +54,7 @@ export default {
       'getTagPagesInfo'
     ]),
     goBack () {
-      smoothScroll(736, 600)
+      smoothScroll(743, 600)
       this.$router.go(-1)
     }
   },
@@ -69,7 +69,7 @@ export default {
   watch: {
     $route () {
       this.getTagPagesInfo(this.$route.params.tag_name)
-      smoothScroll(736, 600)
+      smoothScroll(743, 600)
     }
   }
 }

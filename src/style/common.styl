@@ -26,6 +26,22 @@
   font-family 'SentySnow'
   src url('./assets/font/Senty/SentySnowMountain.ttf') format('truetype')
 
+@font-face
+  font-family 'AidaConden'
+  src url('./assets/font/Aida/AidaSerifa-Condensed.ttf') format('truetype')
+
+@font-face
+  font-family 'AidaMedium'
+  src url('./assets/font/Aida/AidaSerifObliqueMedium.ttf') format('truetype')
+
+@font-face
+  font-family 'GeosansLight'
+  src url('./assets/font/Geosans/GeosansLight-Oblique.ttf') format('truetype')
+
+@font-face
+  font-family 'Geosans'
+  src url('./assets/font/Geosans/GeosansLight.ttf') format('truetype')  
+
 #app
   font-family 'Avenir', Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased
@@ -44,9 +60,17 @@ a
 .el-dialog-change div:first-child
   border-radius 2rem
   margin-top -1rem
+  margin-bottom 0
 
 .el-button
   border-radius 1rem  !important
+
+.el-dialog__body
+  padding 0 !important
+  margin-top 1.5rem !important
+
+.el-dialog__footer
+  padding 0
 
 
 .el-dialog--small
@@ -56,6 +80,8 @@ a
 .el-form-item
   margin-top 0.5rem !important
 
+.el-input__inner
+  width 95% !important
 .icon
   border-radius 50%
   z-index 1
