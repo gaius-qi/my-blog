@@ -64,5 +64,10 @@ export default {
   async getCategoryPagesInfo ({commit, state}, categoryId) {
     let pages = await io.getCategoryPages(categoryId)
     commit(types.GET_CATEGORY_PAGES, pages)
+  },
+  // 用户登陆
+  async createSessionInfo ({commit, state}, userInfo) {
+    let user = await io.createSession(userInfo)
+    commit(types.CREATE_SESSION, user)
   }
 }

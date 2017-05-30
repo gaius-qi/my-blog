@@ -69,7 +69,7 @@ export default {
 .slide-fade-leave-active
   transform translate3d(80rem,0,0)
   opacity 0
-  
+
 .slide-fade-enter
   transform translate3d(-240rem,0,0)
   opacity 0

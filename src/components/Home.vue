@@ -1,30 +1,32 @@
 <template>
-  <div class="container-all">
+<div class="container-all">
   <!-- 应该放入/static文件夹中，因为vue-cli配置webpack不参与打包 -->
-  <video autoplay loop poster="/static/image/background.png" id="bgvid">
-    <source src="/static/video/background.mp4" type="video/mp4">
-  </video>
-  <nav-top></nav-top>
-  <header role="banner">
-    <h1 class="animated rubberBand" id="letter">Fear always springs from ignorance.</h1>
-    <div class="ityped-style"><span id="ityped"></span></div>
-    <h2 class="animated rubberBand">Isaac's Blog</h2>
-    <aside class="link-icon" role="complementary">
-      <a href="https://github.com/qwbtc" target="_blank">
-        <div class="animated rubberBand" data-icon="ei-sc-github" data-size="m"></div>
-      </a>
-      <a href="https://www.facebook.com/dylan.bob.77377" target="_blank">
-        <div class="animated rubberBand" data-icon="ei-sc-facebook" data-size="m"></div>
-      </a>
-      <a href="https://twitter.com/BobDylan0313" target="_blank">
-        <div class="animated rubberBand" data-icon="ei-sc-twitter" data-size="m"></div>
-      </a>
-      <div class="animated rubberBand" data-icon="ei-user" data-size="m"></div>
-    </aside>
-    <home-down-button></home-down-button>
-    <home-up-button></home-up-button>
-  </header>
-  <div class="container">
+  <div class="header-container" ref='header'>
+    <video autoplay loop poster="/static/image/background.png" id="bgvid">
+      <source src="/static/video/background.mp4" type="video/mp4">
+    </video>
+    <nav-top></nav-top>
+    <header role="banner">
+      <h1 class="animated rubberBand" id="letter">Fear always springs from ignorance.</h1>
+      <div class="ityped-style"><span id="ityped"></span></div>
+      <h2 class="animated rubberBand">Isaac's Blog</h2>
+      <aside class="link-icon" role="complementary">
+        <a href="https://github.com/qwbtc" target="_blank">
+          <div class="animated rubberBand" data-icon="ei-sc-github" data-size="m"></div>
+        </a>
+        <a href="https://www.facebook.com/dylan.bob.77377" target="_blank">
+          <div class="animated rubberBand" data-icon="ei-sc-facebook" data-size="m"></div>
+        </a>
+        <a href="https://twitter.com/BobDylan0313" target="_blank">
+          <div class="animated rubberBand" data-icon="ei-sc-twitter" data-size="m"></div>
+        </a>
+        <div class="animated rubberBand" data-icon="ei-user" data-size="m"></div>
+      </aside>
+      <home-down-button></home-down-button>
+      <home-up-button></home-up-button>
+    </header>
+  </div>
+  <div class="container" ref='main'>
 
     <hr class="divider" />
 
@@ -36,7 +38,7 @@
       </div>
       <aside role="complementary">
         <person-abstract></person-abstract>
-        <document-abstract></document-abstract>
+        <document-abstract ref='reveal'></document-abstract>
         <archive-abstract></archive-abstract>
       </aside>
     </main>
@@ -44,9 +46,10 @@
     <hr class="divider divider-last" />
 
     <footer role="contentinfo">
-      <p>© 2016 &nbsp; Ö &nbsp; Isaac</p>
-      <p>All &nbsp; Rights &nbsp; Reserved</p>
-
+      <p> 2016 &nbsp; Ö &nbsp; Isaac</p>
+      <p>&nbsp; &nbsp; this &nbsp; site &nbsp; is &nbsp; opensourced &nbsp; on &nbsp;
+        <a href="https://github.com/qwbtc/" target="_blank">github</a>
+      </p>
     </footer>
 
   </div>
@@ -60,7 +63,9 @@ import NavTop from './common/nav.vue'
 import PersonAbstract from './common/personAbstract.vue'
 import DocumentAbstract from './common/documentAbstract.vue'
 import ArchiveAbstract from './common/archiveAbstract.vue'
-import { init } from 'ityped'
+import {
+  init
+} from 'ityped'
 
 export default {
   name: 'home',
@@ -71,7 +76,8 @@ export default {
         'To reveal the future to man',
         'All human wisdom is summed up',
         'In these two words',
-        'Wait and Hope'],
+        'Wait and Hope'
+      ],
       typeSpeed: 100,
       backSpeed: 30,
       backDelay: 1500,
@@ -171,6 +177,11 @@ Add "scoped" attribute to limit CSS to this component only
       font-family 'SentyMARUKO'
       &:last-child
         margin-top -1rem
+      a
+        font-size 1rem
+        font-family 'SentyMARUKO'
+        &:hover
+          text-decoration underline
 
 // 过渡时注意进入和离开组件同时执行动画，必须离开组件动画执行完，进入组件执行剩余的时间动画。
 // 所以离开续建1s，进入组件2s。实际上展示动画时间是各一秒
@@ -195,6 +206,7 @@ Add "scoped" attribute to limit CSS to this component only
     width 100%
     height auto
     z-index -100
+    background url(../assets/image/background.png) no-repeat
 
   .ityped-style
     font-family Chalkduster

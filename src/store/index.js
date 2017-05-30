@@ -31,7 +31,11 @@ const state = {
   // 某标签对应的所有文章
   tag_pages: [],
   // 某种类对应的所有文章
-  category_pages: []
+  category_pages: [],
+  // 用户登陆信息
+  user: {
+    login: false
+  }
 }
 
 Vue.use(Vuex)

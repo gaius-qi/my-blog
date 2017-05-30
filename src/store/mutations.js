@@ -31,5 +31,9 @@ export default {
   },
   [types.GET_CATEGORY_PAGES] (state, pages) {
     state.category_pages = pages
+  },
+  [types.CREATE_SESSION] (state, user) {
+    state.user = user.data
+    state.user.login = true
   }
 }

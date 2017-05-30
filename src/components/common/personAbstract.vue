@@ -8,7 +8,7 @@
   <div class="post-info">
     <div class="info-inner">
       <router-link :to="{ path: '/' }">
-        <div class="info-num"  @click="scroll">{{page_count_total}}</div>
+        <div class="info-num" @click="scroll">{{page_count_total}}</div>
         <div class="info-name">文章</div>
       </router-link>
     </div>
@@ -43,7 +43,10 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from 'vuex'
+import {
+  mapActions,
+  mapGetters
+} from 'vuex'
 import smoothScroll from 'smoothscroll'
 
 export default {

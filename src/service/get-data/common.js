@@ -71,5 +71,10 @@ export default {
     return axios.get(basicUrl + `/v1/category_pages/${categoryId}`)
       .then(response => response.data)
       .catch(error => console.log(error))
+  },
+  createSession (userInfo) {
+    return axios.post(basicUrl + `/v1/sessions`, userInfo)
+      .then(response => response.data)
+      .catch(error => console.log(error))
   }
 }
