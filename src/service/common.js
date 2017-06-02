@@ -1,5 +1,5 @@
 import axios from 'axios'
-const basicUrl = 'http://localhost:3000'
+const basicUrl = ''
 // 拦截器
 // axios.interceptors.request.use(
 //   config => {
