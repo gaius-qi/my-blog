@@ -131,6 +131,7 @@ export default {
   list-style none
   user-select none
   font-family 'SentyMARUKO'
+  background none
   > .pager-btn
     display inline
     font-size 1.2rem

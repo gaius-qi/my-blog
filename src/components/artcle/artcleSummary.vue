@@ -81,6 +81,7 @@ article
   border 0
   box-shadow 0 0 2.5rem rgba(0, 0, 0, 1)
   border-radius 2rem
+  background none
 
 //对h1块级元素要自适应内容的宽度 需要用flex
 header

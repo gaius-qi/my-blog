@@ -75,6 +75,9 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.container
+  background none
+
 .paging
   margin-top 2.8rem
 
