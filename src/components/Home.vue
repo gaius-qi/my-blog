@@ -2,7 +2,7 @@
 <div class="container-all">
   <!-- 应该放入/static文件夹中，因为vue-cli配置webpack不参与打包 -->
   <div class="header-container" ref='header'>
-    <video autoplay loop poster="/static/image/background.png" id="bgvid">
+    <video autoplay loop poster="/static/image/back.png" id="bgvid">
       <source src="/static/video/background.mp4" type="video/mp4">
     </video>
     <nav-top></nav-top>
@@ -210,7 +210,6 @@ Add "scoped" attribute to limit CSS to this component only
     width 100%
     height auto
     z-index -100
-    background url(../assets/image/background.png) no-repeat
 
   .ityped-style
     font-family Chalkduster
