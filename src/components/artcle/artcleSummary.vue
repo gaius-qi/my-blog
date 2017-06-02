@@ -119,7 +119,7 @@ p
   text-align left
 
 footer
-  font-family 'SentyZHAO'
+  font-family 'SentyMARUKO'
   padding 0.5rem 0 0.5rem 0
   overflow hidden
 

@@ -128,15 +128,14 @@ export default {
   display inline-block
   padding 0
   margin 1rem 0
-  font-size 0
   list-style none
   user-select none
-  font-family 'SentyZHAO'
+  font-family 'SentyMARUKO'
   > .pager-btn
     display inline
     font-size 1.2rem
     position relative
-    padding 6px 12px
+    padding 1px 18px
     line-height 1.2rem
     text-decoration none
     border 0.1rem solid #2c3e50

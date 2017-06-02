@@ -97,6 +97,8 @@ span
   color rgba(226, 39, 45, 0.78)
 
 a
-  font-family 'SentyZHAO'
+  font-family 'SentyMARUKO'
+  font-size 1rem
+  letter-spacing 2px
 
 </style>

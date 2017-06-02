@@ -309,7 +309,7 @@ export default {
       .name
         font-family Chalkduster, fantasy
       .letter
-        font-family 'GeosansLight'
+        font-family 'Geosans'
         color	#708090
 
 .mid
