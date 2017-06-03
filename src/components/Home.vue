@@ -2,9 +2,9 @@
 <div class="container-all">
   <!-- 应该放入/static文件夹中，因为vue-cli配置webpack不参与打包 -->
   <div class="header-container" ref='header'>
-    <video autoplay loop poster="/static/image/back.png" id="bgvid">
+    <!-- <video autoplay loop poster="/static/image/back.png" id="bgvid"> -->
       <!-- <source src="/static/video/background.mp4" type="video/mp4"> -->
-    </video>
+    <!-- </video> -->
     <nav-top></nav-top>
     <header role="banner">
       <h1 class="animated rubberBand" id="letter">Fear always springs from ignorance.</h1>
