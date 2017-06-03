@@ -1,8 +1,8 @@
 import axios from 'axios'
 // 服务器相对url
-const basicUrl = ''
+// const basicUrl = ''
 // 本地开发环境 localhost
-// const basicUrl = 'http://localhost:3000'
+const basicUrl = 'http://localhost:3000'
 // 拦截器
 // axios.interceptors.request.use(
 //   config => {

@@ -91,8 +91,8 @@ header
 //h1进行relative定位是为了在article父类中占据文档流，从而方便h1:after从relative定位的h1以后进行绝对定位
 h1
   font-size 1.5rem
-  font-family 'SentyWEN2017'
-  padding-top 1rem
+  font-family 'SentyMARUKO'
+  padding-top 0.2rem
   position relative
 
 
@@ -102,7 +102,7 @@ h1:after
    width 100%
    height 0.125rem
    position absolute
-   bottom 0.125rem
+   bottom 0.2rem
    background #2c3e50
    transition  all 0.3s ease-in-out
    transform  scale3d(0,1,1)

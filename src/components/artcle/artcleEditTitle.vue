@@ -30,7 +30,7 @@ export default {
   width 80%
   border-radius 1rem
   font-size 1.5rem
-  font-family 'SentyWEN2017'
+  font-family 'SentyMARUKO'
   font-weight bold
   color #2c3e50
   padding 0 1.5rem 0 1.5rem

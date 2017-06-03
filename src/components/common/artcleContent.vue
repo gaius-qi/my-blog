@@ -64,7 +64,7 @@ aside
   font-family 'Avenir'
 
 h1
-  font-family 'SentyWEN2017'
+  font-family 'SentyMARUKO'
   font-size 1.8rem
   position relative
 
