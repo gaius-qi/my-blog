@@ -5,7 +5,7 @@
     <video autoplay loop poster="/static/image/back.png" id="bgvid">
       <source class="video-src" src="/static/video/background.mp4" type="video/mp4">
     </video>
-    <nav-top></nav-top>
+    <nav-top class="bar"></nav-top>
     <header role="banner">
       <h1 class="animated rubberBand" id="letter">Fear always springs from ignorance.</h1>
       <div class="ityped-style"><span id="ityped"></span></div>
@@ -243,4 +243,20 @@ Add "scoped" attribute to limit CSS to this component only
         color #FFFF00
     75%
         color #00fa9a
+
+@media (max-width: 600px)
+  video
+    display: none
+  header
+    position static
+    width 100%
+    text-align center
+    overflow hidden
+    background url(../assets/image/phone-back.png)
+  .container-all
+    min-width 63rem
+  .bar
+    min-width 63rem
+  h1
+    margin 4rem 0 2rem 0
 </style>
