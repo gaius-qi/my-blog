@@ -244,7 +244,7 @@ Add "scoped" attribute to limit CSS to this component only
     75%
         color #00fa9a
 
-@media (max-width: 600px)
+@media screen and (max-device-width: 600px)
   video
     display: none
   header
@@ -259,4 +259,5 @@ Add "scoped" attribute to limit CSS to this component only
     min-width 63rem
   h1
     margin 4rem 0 2rem 0
+
 </style>
