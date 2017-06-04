@@ -58,6 +58,14 @@ export default {
     this.get_tags_info()
     this.get_pages_info(1)
   },
+  mounted () {
+    this.downElm = document.querySelector('.second-paper')
+  },
+  data () {
+    return {
+      downElm: null
+    }
+  },
   computed: {
     ...mapGetters([
       'tags_count',
@@ -77,7 +85,7 @@ export default {
       'DELETE_SESSION'
     ]),
     scroll () {
-      smoothScroll(743, 600)
+      smoothScroll(this.downElm, 600)
     },
     create_page (e) {
       if (this.user.login) {
@@ -99,7 +107,7 @@ export default {
   margin 2rem 1rem 1rem 1rem
   height auto
   border 0
-  box-shadow 0 0 2.5rem rgba(0, 0, 0, 1)
+  box-shadow 0 0 0.7rem rgba(0, 0, 0, 1)
   border-radius 2rem
   padding-bottom 1.5rem
 

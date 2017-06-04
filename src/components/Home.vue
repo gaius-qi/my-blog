@@ -3,7 +3,7 @@
   <!-- 应该放入/static文件夹中, 因为vue-cli配置webpack不参与打包 -->
   <div class="header-container" ref='header'>
     <video autoplay loop poster="/static/image/back.png" id="bgvid">
-      <source src="/static/video/background.mp4" type="video/mp4">
+      <source class="video-src" src="/static/video/background.mp4" type="video/mp4">
     </video>
     <nav-top></nav-top>
     <header role="banner">
@@ -28,11 +28,14 @@
       <home-up-button></home-up-button>
     </header>
   </div>
+
+  <div class="second-paper"></div>
+
   <div class="container" ref='main'>
 
-    <hr class="divider" />
+    <hr class="divider first-divider" />
 
-    <main role="main">
+    <main role="main" class="">
       <div class="content-wrap">
         <transition name="slide-fade">
           <router-view></router-view>
@@ -45,7 +48,7 @@
       </aside>
     </main>
 
-    <hr class="divider divider-last" />
+    <hr class="divider last-divider" />
 
     <footer role="contentinfo">
       <p> 2016 &nbsp; Ö &nbsp; Isaac</p>
@@ -103,6 +106,9 @@ Add "scoped" attribute to limit CSS to this component only
     width 100%
     height auto
 
+  .header-container
+    height auto
+
   .container
     background url(../assets/image/img01.png) repeat
     background-size 100% 46rem
@@ -147,13 +153,17 @@ Add "scoped" attribute to limit CSS to this component only
     margin 0 auto
 
   .divider
-    margin-top -0.3rem
+    margin 0
     height 3.3rem
     border 0
-    box-shadow inset 0 3.3rem 3.3rem -3.3rem rgba(0, 0, 0, 1)
+    box-shadow inset 0 3.3rem 0.7rem -3.3rem rgba(0, 0, 0, 1)
+
+  .first-divider
+    margin-top -0.5rem
+    box-shadow inset 0 3.8rem 0.7rem -3.3rem rgba(0, 0, 0, 0.7)
 
   main
-    margin -2.5rem 1rem 0 1rem
+    margin -1.2rem 1rem 0 1rem
     display flex
     height auto
     justify-content space-around
@@ -169,9 +179,9 @@ Add "scoped" attribute to limit CSS to this component only
   figure
     margin 0
 
-  .divider-last
+  .last-divider
     margin-top -1rem
-    box-shadow inset 0 -3.3rem 3.3rem -3.3rem rgba(0, 0, 0, 1)
+    box-shadow inset 0 -3.3rem 0.7rem -3.3rem rgba(0, 0, 0, 1)
 
   footer
     margin-top 2rem
@@ -204,12 +214,13 @@ Add "scoped" attribute to limit CSS to this component only
     transform translate3d(-240rem,0,0)
     opacity 0
 
+// safari 浏览器video标签内source外边界有条线和边距
+// 要在vedio标签加overflow消除边距和线
   video#bgvid
     min-width 100%
     min-height 100%
-    width 100%
     height auto
-    z-index -100
+    overflow hidden
 
   .ityped-style
     font-family Chalkduster

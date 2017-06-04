@@ -12,12 +12,20 @@ import {
 import smoothScroll from 'smoothscroll'
 
 export default {
+  mounted () {
+    this.downElm = document.querySelector('.second-paper')
+  },
+  data () {
+    return {
+      downElm: null
+    }
+  },
   methods: {
     ...mapActions([
       'getTestInfo'
     ]),
     scroll () {
-      smoothScroll(743, 600)
+      smoothScroll(this.downElm, 600)
     }
   },
   computed: {

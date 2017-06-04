@@ -85,8 +85,8 @@ export default {
     width 98%
     font-size 1rem
     height 3rem
-    left 1rem
-    top 1rem
+    left 0rem
+    top 0rem
     z-index 1
 
   .navbar

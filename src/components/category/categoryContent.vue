@@ -21,9 +21,17 @@ export default {
       require: true
     }
   },
+  data () {
+    return {
+      downElm: null
+    }
+  },
+  mounted () {
+    this.downElm = document.querySelector('.second-paper')
+  },
   methods: {
     scroll () {
-      smoothScroll(743, 600)
+      smoothScroll(this.downElm, 600)
     }
   }
 }

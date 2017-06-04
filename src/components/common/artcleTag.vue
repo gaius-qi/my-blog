@@ -46,6 +46,11 @@ import ArtcleSummary from '../artcle/artcleSummary.vue'
 import smoothScroll from 'smoothscroll'
 
 export default {
+  data () {
+    return {
+      downElm: null
+    }
+  },
   created () {
     this.getTagPagesInfo(this.$route.params.tag_name)
   },
@@ -54,9 +59,12 @@ export default {
       'getTagPagesInfo'
     ]),
     goBack () {
-      smoothScroll(743, 600)
+      smoothScroll(this.downElm, 600)
       this.$router.go(-1)
     }
+  },
+  mounted () {
+    this.downElm = document.querySelector('.second-paper')
   },
   computed: {
     ...mapState([
@@ -69,7 +77,7 @@ export default {
   watch: {
     $route () {
       this.getTagPagesInfo(this.$route.params.tag_name)
-      smoothScroll(743, 600)
+      smoothScroll(this.downElm, 600)
     }
   }
 }
@@ -86,7 +94,7 @@ article
   margin 2rem 1rem 1rem 1rem
   height auto
   border 0
-  box-shadow 0 0 2.5rem rgba(0, 0, 0, 1)
+  box-shadow 0 0 0.7rem rgba(0, 0, 0, 1)
   border-radius 2rem
 
 header

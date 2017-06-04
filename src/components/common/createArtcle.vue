@@ -36,7 +36,8 @@ export default {
       tags: [],
       content: '',
       summary: '',
-      title: ''
+      title: '',
+      downElm: null
     }
   },
   components: {
@@ -50,6 +51,9 @@ export default {
     ...mapState([
       'user'
     ])
+  },
+  mounted () {
+    this.downElm = document.querySelector('.second-paper')
   },
   methods: {
     ...mapActions([
@@ -81,7 +85,7 @@ export default {
         }
       }
       this.createPageInfo({userId: 2, data: params, userAuth: this.user})
-      smoothScroll(743, 600)
+      smoothScroll(this.downElm, 600)
     }
   }
 }

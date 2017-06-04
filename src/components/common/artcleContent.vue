@@ -51,7 +51,7 @@ export default {
 
 <style lang="stylus" scoped>
 article
-  box-shadow 0 0 2.5rem rgba(0, 0, 0, 1)
+  box-shadow 0 0 0.7rem rgba(0, 0, 0, 1)
   border-radius 2rem
   padding 1rem 3rem 1rem 3rem
   margin 2rem 1rem 0 1rem

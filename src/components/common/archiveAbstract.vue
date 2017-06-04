@@ -22,6 +22,11 @@ import {
 import smoothScroll from 'smoothscroll'
 
 export default {
+  data () {
+    return {
+      downElm: null
+    }
+  },
   created () {
     this.getPagesDateInfo()
   },
@@ -46,12 +51,15 @@ export default {
       return result
     }
   },
+  mounted () {
+    this.downElm = document.querySelector('.second-paper')
+  },
   methods: {
     ...mapActions([
       'getPagesDateInfo'
     ]),
     scroll () {
-      smoothScroll(743, 600)
+      smoothScroll(this.downElm, 600)
     }
   }
 }
@@ -62,7 +70,7 @@ export default {
   margin 2rem 1rem 1rem 1rem
   height auto
   border 0
-  box-shadow 0 0 2.5rem rgba(0, 0, 0, 1)
+  box-shadow 0 0 0.7rem rgba(0, 0, 0, 1)
   border-radius 2rem
   padding-bottom 0.1rem
 

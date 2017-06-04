@@ -36,6 +36,9 @@ export default {
       default: 1
     }
   },
+  mounted () {
+    this.downElm = document.querySelector('.second-paper')
+  },
   methods: {
     prev () {
       if (this.index > 1) {
@@ -61,7 +64,7 @@ export default {
       if (this.index !== page) {
         this.index = page
         this.$emit('change', this.index)
-        smoothScroll(743, 600)
+        smoothScroll(this.downElm, 600)
       }
     }
   },
@@ -106,7 +109,8 @@ export default {
       limit: this.pageSize,
       size: this.total || 1,
       showPrevMore: false,
-      showNextMore: false
+      showNextMore: false,
+      downElm: null
     }
   },
   watch: {

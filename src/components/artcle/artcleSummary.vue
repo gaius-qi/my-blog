@@ -52,6 +52,14 @@ export default {
       required: true
     }
   },
+  data () {
+    return {
+      downElm: null
+    }
+  },
+  mounted () {
+    this.downElm = document.querySelector('.second-paper')
+  },
   computed: {
     ...mapState([
       'page_click_count'
@@ -68,7 +76,7 @@ export default {
     ]),
     clickPage () {
       this.clickPageInfo(this.pageId)
-      smoothScroll(743, 600)
+      smoothScroll(this.downElm, 600)
     }
   }
 }
@@ -79,7 +87,7 @@ article
   margin 2rem 1rem 1rem 1rem
   height auto
   border 0
-  box-shadow 0 0 2.5rem rgba(0, 0, 0, 1)
+  box-shadow 0 0 0.7rem rgba(0, 0, 0, 1)
   border-radius 2rem
   background none
 
