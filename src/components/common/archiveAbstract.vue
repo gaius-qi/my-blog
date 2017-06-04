@@ -41,7 +41,7 @@ export default {
       let result = []
       for (let [key, value] of this.pages_date) {
         let row = []
-        if (key.slice(4) <= '9') {
+        if (key.slice(4) <= '09') {
           row.push(...[key.slice(0, 4), '0' + parseInt(key.slice(4)), value])
         } else {
           row.push(...[key.slice(0, 4), parseInt(key.slice(4)), value])
