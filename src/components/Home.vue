@@ -124,10 +124,10 @@ Add "scoped" attribute to limit CSS to this component only
     color #00fa9a
 
   h1
-    margin 12rem 0 1rem 0
-    font-size 2rem
+    margin 10rem 0 1rem 0
+    font-size 4rem
     font-weight lighter
-    font-family Chalkduster, fantasy
+    font-family 'blah', Chalkduster, Zapfino, fantasy
     animation color-change 5s linear
     animation-iteration-count infinite
     transition all .5s ease
@@ -141,6 +141,7 @@ Add "scoped" attribute to limit CSS to this component only
     animation color-change 5s linear
     animation-iteration-count infinite
     transition all .5s ease
+    font-family 'Edo'
     &:hover
       transform scale(1.2, 1.2)
       cursor default
@@ -223,9 +224,9 @@ Add "scoped" attribute to limit CSS to this component only
     overflow hidden
 
   .ityped-style
-    font-family Chalkduster
+    font-family 'Edo', Chalkduster, Zapfino
     color #00fa9a
-    font-size 1.2rem
+    font-size 2.5rem
     margin-top 3rem
     animation color-change 5s linear
     animation-iteration-count infinite
