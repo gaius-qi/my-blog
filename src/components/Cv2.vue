@@ -1,23 +1,21 @@
 <template>
   <div class="container">
+    <div class="top">
+      <figure>
+        <img src="../assets/image/my_photo.jpg" alt="">
+        <figcaption>
+          <p class="name">Isaac</p>
+          <p class="letter">Fear always springs from ignorance.</p>
+        </figcaption>
+      </figure>
+    </div>
     <div class="mid">
       <aside>
-        <figure>
-          <img src="../assets/image/my_photo.jpg" alt="">
-        </figure>
         <div class="title">
           <p>Curriculum Vitae</p>
           <hr>
         </div>
         <div class="resume">
-          <p>
-            <i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i>
-            <span>戚文博</span>
-          </p>
-          <p>
-            <i class="fa fa-map-marker fa-fw" aria-hidden="true"></i>
-            <span>辽宁省&nbsp;&nbsp;大连市</span>
-          </p>
           <p>
             <i class="fa fa-user-o fa-fw" aria-hidden="true"></i>
             <span>前端工程师</span>
@@ -25,10 +23,6 @@
           <p>
             <i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i>
             <span>江南大学</span>
-          </p>
-          <p>
-            <i class="fa fa-phone fa-fw" aria-hidden="true"></i>
-            <span>18806186275</span>
           </p>
           <p>
             <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
@@ -40,7 +34,7 @@
           </p>
           <p>
             <i class="fa fa-home fa-fw" aria-hidden="true"></i>
-            <a href="isaac.pub"><span>isaac.pub</span></a>
+            <span>isaac.pub</span>
           </p>
         </div>
         <hr>
@@ -183,9 +177,8 @@
             <span>
               喜爱程序员这个职业，对于代码独有一份热情，热衷于探索新技术。
               具有良好的沟通能力和团队合作能力。
-              喜爱Ruby的优雅和JS的无所不能。
+              喜爱Ruby优雅的书写方式和JS无所不能。
               了解后端ROR开发和前端自动化项目的构建。
-              对于解决问题的思路清晰，有良好的代码风格和注释。
               一直保持review自己代码的习惯，并要求自己精益求精。
               本人坚信人无完人，只要放对地方，哪怕是一条咸鱼也有它的价值。
               坚信自己能一直保持对代码的那份饱满的热情。
@@ -199,7 +192,7 @@
           </div>
           <div class="aside">
             <p>
-              <span>上海住福网络科技有限公司</span>
+              <span>住福网络科技上海有限公司</span>
             </p>
             <div class="time">
               <i class="fa fa-calendar fa-fw time" aria-hidden="true"></i>
@@ -208,8 +201,7 @@
             <article>
               <span>
                 基于Ruby On Rails开发Api，公司间Api的对接，登陆验证，定时任务等。
-                通过一定方式优化Api响应时间。并基于Semantic开发后台页面。
-                使用Ruby GEM nokogiri写简单的爬虫，参与测试服务器的搭建。
+                优化Api响应时间。
                 后期基于webpack，vue全家桶开发SPA单页面应用和h5移动端活动页面。
               </span>
             </article>
@@ -239,7 +231,6 @@
                 rack-attack限制访问频率，pundit做权限管理，redcarpet和coderay处理markdown的解析和代码高亮。
                 前端webpack打包和编译es6，stylus等语法，基于vue，vuex，vue-router，axios构建单页面应用。
                 使用echart，maked，ityped等库。
-                前端基于webhook，后端基于mina做自动化部署。
               </span>
             </article>
           </div>
@@ -276,7 +267,6 @@
             </div>
             <article>
               <span>硕士&nbsp;&nbsp;&nbsp;计算机技术</span>
-              <p>研究课题&nbsp;&nbsp;&nbsp;LBSN中基于协同过滤算法的位置推荐研究</p>
             </article>
           </div>
         </div>
@@ -301,37 +291,42 @@ export default {
   flex-direction column
   align-items center
 
+.top
+  width 61rem
+  height 15rem
+  background 	#F0FFF0
+  margin-top 1rem
+  box-shadow 0 0 1rem #708090
+  figure
+    text-align center
+    img
+      width 8rem
+      height 8rem
+      border-radius 50%
+    figcaption
+      margin-top 0.5rem
+      font-size 1rem
+      .name
+        font-family Chalkduster, fantasy
+      .letter
+        font-family 'Geosans'
+        color	#708090
+
 .mid
   display flex
   justify-content center
   padding-top 1rem
   padding-bottom 1rem
 
-a
-  color #ffffff
-  font-weight bold
-  font-size 1.1rem
-  font-family 'Geosans'
-
 hr
   border 0
-
-figure
-  text-align center
-  margin-top 0.5rem
-  margin-bottom -6rem
-  img
-    width 8rem
-    height 8rem
-    border-radius 50%
-    box-shadow 0 0 1rem #708090
-    border 4px solid #20B2AA
-
 
 aside
   width 18rem
   height auto
-  background #40E0D0
+  background 	#ADD8E6
+  margin-right 1rem
+  box-shadow 0 0 1rem #708090
   color #ffffff
   font-size 1rem
   font-family 'Geosans'
@@ -380,10 +375,11 @@ main
   >div
     width 37rem
     height 100
-    background #F5FFFA
+    background #FFFAFA
+    box-shadow 0 0 1rem #708090
     padding 1.5rem
     font-family 'Geosans'
-    color #20B2AA
+    color #4682B4
   .introduce
     .title
       font-size 1.7rem
@@ -395,6 +391,7 @@ main
       margin-top 0.7rem
       font-family 'Avenir'
   .work
+    margin-top 1rem
     .title
       font-size 1.7rem
       font-weight bold
@@ -410,6 +407,7 @@ main
       margin-top 0.7rem
       font-family 'Avenir'
   .project
+    margin-top 1rem
     .title
       font-size 1.7rem
       font-weight bold
@@ -429,7 +427,7 @@ main
           justify-content space-between
           div
             margin-left 1rem
-            background #20B2AA
+            background #4682B4
             color #ffffff
             padding 0.1rem 0.4rem 0.1rem 0.4rem
             border-radius 0.2rem
@@ -441,6 +439,7 @@ main
     .project-top
       margin-top 2rem
   .education
+    margin-top 1rem
     .title
       font-size 1.7rem
       font-weight bold
@@ -456,8 +455,5 @@ main
         margin-top 0.5rem
         color #778899
         font-size 1rem
-        p
-          margin-top 0.4rem
-          font-size 1rem
 
 </style>
