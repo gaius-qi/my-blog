@@ -136,6 +136,7 @@ Add "scoped" attribute to limit CSS to this component only
       cursor default
 
   h2
+    font-size 1.3rem
     margin-top 2rem
     color #00fa9a
     animation color-change 5s linear
@@ -226,7 +227,7 @@ Add "scoped" attribute to limit CSS to this component only
   .ityped-style
     font-family 'Edo', Chalkduster, Zapfino
     color #00fa9a
-    font-size 2.5rem
+    font-size 2.8rem
     margin-top 3rem
     animation color-change 5s linear
     animation-iteration-count infinite
