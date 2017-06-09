@@ -227,7 +227,7 @@ Add "scoped" attribute to limit CSS to this component only
   .ityped-style
     font-family 'Edo', Chalkduster, Zapfino
     color #00fa9a
-    font-size 2.8rem
+    font-size 2.6rem
     margin-top 3rem
     animation color-change 5s linear
     animation-iteration-count infinite
