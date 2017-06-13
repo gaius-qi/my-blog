@@ -186,7 +186,7 @@
               喜爱Ruby的优雅和JS的无所不能。
               了解后端ROR开发和前端自动化项目的构建。
               对于解决问题的思路清晰，有良好的代码风格和注释。
-              一直保持review自己代码的习惯，并要求自己精益求精。
+              一直保持Review自己代码的习惯，并要求自己精益求精。
               本人坚信人无完人，只要放对地方，哪怕是一条咸鱼也有它的价值。
               坚信自己能一直保持对代码的那份饱满的热情。
             </span>
@@ -209,8 +209,8 @@
               <span>
                 基于Ruby On Rails开发Api，公司间Api的对接，登陆验证，定时任务等。
                 通过一定方式优化Api响应时间。并基于Semantic开发后台页面。
-                使用Ruby GEM nokogiri写简单的爬虫，参与测试服务器的搭建。
-                后期基于webpack，vue全家桶开发SPA单页面应用和h5移动端活动页面。
+                使用Ruby GEM Nokogiri写简单的爬虫，参与测试服务器的搭建。
+                后期基于Webpack，Vue全家桶开发SPA单页面应用和H5移动端活动页面。
               </span>
             </article>
           </div>
@@ -234,12 +234,12 @@
             </div>
             <article>
               <span>
-                基于webpack和vue全家桶实现的SPA单页面应用,后端数据库为PostgreSql，
-                利用缓存redis对部分常用数据进行持久化，用Sidekiq执行后台任务，CROS跨域，
-                rack-attack限制访问频率，pundit做权限管理，redcarpet和coderay处理markdown的解析和代码高亮。
-                前端webpack打包和编译es6，stylus等语法，基于vue，vuex，vue-router，axios构建单页面应用。
-                使用echart，maked，ityped等库。
-                前端基于webhook，后端基于mina做自动化部署。
+                基于Webpack和Vue全家桶实现的SPA单页面应用,后端数据库为PostgreSql，
+                利用缓存Redis对部分常用数据进行持久化，用Sidekiq执行后台任务，CORS跨域，
+                rack-attack限制访问频率，Pundit做权限管理，Redcarpet和Coderay处理Markdown的解析和代码高亮。
+                前端Webpack打包和编译ES6，Stylus等语法，基于Vue，Vuex，Vue Router，Axios构建单页面应用。
+                使用ECharts，Maked，Ityped等库。
+                前端基于Webhook，后端基于Mina做自动化部署。
               </span>
             </article>
           </div>
@@ -257,7 +257,7 @@
             </div>
             <article>
               <span>
-                简单但功能强大的分页插件，难点主要在对页码的确定。优点在于美观且简洁。使用webpack打包和编译，
+                简单但功能强大的分页插件，难点主要在对页码的确定。优点在于美观且简洁。使用Webpack打包和编译，
                 已发布npm仓库。
               </span>
             </article>

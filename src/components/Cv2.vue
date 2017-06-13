@@ -227,10 +227,10 @@
             <article>
               <span>
                 基于webpack和vue全家桶实现的SPA单页面应用,后端数据库为PostgreSql，
-                利用缓存redis对部分常用数据进行持久化，用Sidekiq执行后台任务，CROS跨域，
-                rack-attack限制访问频率，pundit做权限管理，redcarpet和coderay处理markdown的解析和代码高亮。
-                前端webpack打包和编译es6，stylus等语法，基于vue，vuex，vue-router，axios构建单页面应用。
-                使用echart，maked，ityped等库。
+                利用缓存redis对部分常用数据进行持久化，用Sidekiq执行后台任务，CORS跨域，
+                rack-attack限制访问频率，Pundit做权限管理，redcarpet和coderay处理Markdown的解析和代码高亮。
+                前端Webpack打包和编译es6，stylus等语法，基于vue，vuex，vue-router，axios构建单页面应用。
+                使用echarts，maked，ityped等库。
               </span>
             </article>
           </div>
