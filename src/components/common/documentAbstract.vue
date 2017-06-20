@@ -101,11 +101,11 @@ export default {
           },
           {
             name: 'ES6',
-            value: 4525
+            value: 3421
           },
           {
             name: 'CSS3',
-            value: 7839
+            value: 6745
           },
           {
             name: 'HTML5',
