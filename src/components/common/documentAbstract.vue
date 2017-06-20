@@ -112,11 +112,11 @@ export default {
             value: 5352
           },
           {
-            name: 'Vue',
+            name: 'Vue.js',
             value: 6987
           },
           {
-            name: 'React',
+            name: 'React.js',
             value: 7965
           },
           {
