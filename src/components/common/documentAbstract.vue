@@ -61,11 +61,11 @@ export default {
         data: [
           {
             name: 'server',
-            value: 3252
+            value: 6923
           },
           {
             name: 'web',
-            value: 4324
+            value: 7932
           },
           {
             name: 'Ruby',
@@ -105,7 +105,7 @@ export default {
           },
           {
             name: 'CSS3',
-            value: 4796
+            value: 7839
           },
           {
             name: 'HTML5',
@@ -113,15 +113,15 @@ export default {
           },
           {
             name: 'Vue',
-            value: 6987
-          },
-          {
-            name: 'React.js',
             value: 7965
           },
           {
+            name: 'React.js',
+            value: 2301
+          },
+          {
             name: 'Javascript',
-            value: 8963
+            value: 2401
           },
           {
             name: 'Postgresql',
