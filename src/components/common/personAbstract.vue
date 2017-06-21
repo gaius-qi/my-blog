@@ -117,6 +117,9 @@ export default {
   width 6rem
   height 6rem
   box-shadow 0 0 0.5rem rgba(0, 0, 0, 1)
+  transition all 1s ease-in-out
+  &:hover
+    transform rotateY(360deg)
 
 .nick-name
   margin-top 0.8rem
@@ -165,4 +168,5 @@ span
 
 a:hover
   cursor default
+
 </style>
