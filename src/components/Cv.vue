@@ -471,8 +471,8 @@
                 I like to be a front-end developer. Whenever coding is full of enthusiasm and keen to explore new technologies.
                 And I have good communication skills and team working spirit.
                 Moreover, I have been addicted to elegant Ruby and omnipotent JavaScript.
-                Has the general ability of server development with ROR and building front-end automation.
-                Clear in mind and systematic in work.
+                Have the general ability of server development with ROR and building front-end automation.
+                Be clear in mind and systematic in work.
                 In addition, I was constantly perfecting myself.
                 Every man is the architect of his own fortune.
                 Convinced that I can always keep coding passion.
