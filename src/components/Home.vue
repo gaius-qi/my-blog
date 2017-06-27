@@ -2,8 +2,8 @@
 <div class="container-all">
   <!-- 应该放入/static文件夹中, 因为vue-cli配置webpack不参与打包 -->
   <div class="header-container" ref='header'>
-    <video autoplay loop id="bgvid">
-      <source class="video-src" src="/static/video/background.webm" type="video/webm">
+    <video autoplay loop poster="/static/image/back.png" id="bgvid">
+      <source class="video-src" src="/static/video/background.mp4" type="video/mp4">
     </video>
     <nav-top class="bar"></nav-top>
     <header role="banner">
@@ -221,7 +221,7 @@ Add "scoped" attribute to limit CSS to this component only
   video#bgvid
     min-width 100%
     min-height 100%
-    height auto
+    height 46rem
     overflow hidden
 
   .ityped-style
