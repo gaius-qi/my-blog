@@ -221,7 +221,6 @@ Add "scoped" attribute to limit CSS to this component only
   video#bgvid
     min-width 100%
     min-height 100%
-    height 46rem
     overflow hidden
 
   .ityped-style
