@@ -204,7 +204,7 @@
               </p>
               <div class="time">
                 <i class="fa fa-calendar fa-fw time" aria-hidden="true"></i>
-                <span>2016&nbsp;年&nbsp;2&nbsp;月&nbsp;-&nbsp;现在</span>
+                <span>2016&nbsp;年&nbsp;2&nbsp;月&nbsp;-&nbsp;2017&nbsp;年&nbsp;5&nbsp;月</span>
               </div>
               <article>
                 <span>
@@ -246,6 +246,24 @@
             </div>
             <div class="project-content project-top">
               <div class="title">
+                <span>商达水务企业端</span>
+                <div class="project-icon">
+                  <div>
+                    Vue
+                  </div>
+                  <div>
+                    WebSocket
+                  </div>
+                </div>
+              </div>
+              <article>
+                <span>
+                  将其重新更改为前后端分离，基于Vue全家桶实现SPA单页面应用，主要通过WebSocket进行水质检测点的实时信息更新。
+                </span>
+              </article>
+            </div>
+            <div class="project-content project-top">
+              <div class="title">
                 <span>vue-beauty-paginator&nbsp;&nbsp;&nbsp;分页组件</span>
                 <div class="project-icon">
                   <div>
@@ -273,7 +291,7 @@
               <p>江南大学</p>
               <div class="time">
                 <i class="fa fa-calendar fa-fw time" aria-hidden="true"></i>
-                <span>2015&nbsp;年&nbsp;9&nbsp;月&nbsp;-&nbsp;2018&nbsp;年&nbsp;9&nbsp;月</span>
+                <span>2015&nbsp;年&nbsp;7&nbsp;月&nbsp;-&nbsp;2018&nbsp;年&nbsp;7&nbsp;月</span>
               </div>
               <article>
                 <span>硕士&nbsp;&nbsp;&nbsp;计算机技术</span>
@@ -490,7 +508,7 @@
               </p>
               <div class="time">
                 <i class="fa fa-calendar fa-fw time" aria-hidden="true"></i>
-                <span>February 1, 2016 - Now</span>
+                <span>February 1, 2016 - May 1, 2017</span>
               </div>
               <article>
                 <span>
@@ -524,6 +542,25 @@
                   The environment of the project ‘s development includes OS X
                   and background using PostgreSql storage, Redis, Rails, Mina and so on.
                   The client uses Vue, Vuex, Vue Router, Axios, ECharts, Webhook and so on.
+                </span>
+              </article>
+            </div>
+            <div class="project-content project-top">
+              <div class="title">
+                <span>Sanda's Corporate Client</span>
+                <div class="project-icon">
+                  <div>
+                    Vue
+                  </div>
+                  <div>
+                    WebSocket
+                  </div>
+                </div>
+              </div>
+              <article>
+                <span>
+                  The client uses Vue, Vuex, Vue Router, Axios，Element UI and so on.
+                  Moreover, I use WebSocket for real-time detecting system.
                 </span>
               </article>
             </div>
