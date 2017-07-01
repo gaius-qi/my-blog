@@ -41,7 +41,7 @@
             </p>
             <p>
               <i class="fa fa-home fa-fw" aria-hidden="true"></i>
-              <a href="isaac.pub"><span>isaac.pub</span></a>
+              <a href="http://isaac.pub/"><span>isaac.pub</span></a>
             </p>
           </div>
           <hr>
