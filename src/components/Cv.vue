@@ -33,7 +33,7 @@
             </p>
             <p>
               <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
-              <span>bob.dylan0313@gmail.com</span>
+              <span>gaius.qi@gmail.com</span>
             </p>
             <p>
               <i class="fa fa-github fa-fw" aria-hidden="true"></i>
@@ -239,7 +239,7 @@
               </div>
               <article>
                 <span>
-                  基于Angular4 + PrimeNG技术栈，负责商业生态数据产品的前端功能设计、开发和实现。提升产品易用性和用户体验、优化Web界面及业务操作性能。
+                  基于Angular4 + TypeScript + PrimeNG技术栈，负责商业生态数据产品的前端功能设计、开发和实现。提升产品易用性和用户体验、优化Web界面及业务操作性能。
                 </span>
               </article>
             </div>
@@ -292,7 +292,7 @@
             </div>
             <div class="project-content project-top">
               <div class="title">
-                <span>vue-beauty-paginator&nbsp;&nbsp;&nbsp;分页组件</span>
+                <span>vue-beauty-paginator</span>
                 <div class="project-icon">
                   <div>
                     Webpack
@@ -365,7 +365,7 @@
             </p>
             <p>
               <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
-              <span>bob.dylan0313@gmail.com</span>
+              <span>gaius.qi@gmail.com</span>
             </p>
             <p>
               <i class="fa fa-github fa-fw" aria-hidden="true"></i>
@@ -575,7 +575,7 @@
                   Mainly responsible for business ecology data products front-end function design,
                   development and implementation. Improve product ease of use and user experience,
                   optimize the Web interface and business performance.
-                  The mainly used technologies are Angular4, PrimeNG and so on.
+                  The mainly used technologies are Angular4, TypeScript, PrimeNG and so on.
                 </span>
               </article>
             </div>

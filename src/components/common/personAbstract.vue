@@ -2,7 +2,7 @@
 <div class="container">
   <img class="avatar" src="../../assets/image/img03.png"></img>
   <a @click="create_page">
-    <h3 class="nick-name" @click="scroll">Isaac</h3>
+    <h3 class="nick-name" @click="scroll">Gaius</h3>
   </a>
   <a @click="login_out">
     <p class="desc">Fear always springs from ignorance.</p>

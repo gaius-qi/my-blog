@@ -9,7 +9,7 @@
     <header role="banner">
       <h1 class="animated rubberBand" id="letter">Fear always springs from ignorance.</h1>
       <div class="ityped-style"><span id="ityped"></span></div>
-      <h2 class="animated rubberBand">Isaac's Blog</h2>
+      <h2 class="animated rubberBand">Gaius' Blog</h2>
       <aside class="link-icon" role="complementary">
         <a href="https://github.com/qwbtc" target="_blank">
           <div class="animated rubberBand" data-icon="ei-sc-github" data-size="m"></div>
@@ -51,7 +51,7 @@
     <hr class="divider last-divider" />
 
     <footer role="contentinfo">
-      <p> 2016 &nbsp; Ö &nbsp; Isaac</p>
+      <p> 2016 &nbsp; Ö &nbsp; Gaius</p>
       <p>&nbsp; &nbsp; this &nbsp; site &nbsp; is &nbsp; opensourced &nbsp; on &nbsp;
         <a href="https://github.com/qwbtc/" target="_blank">github</a>
       </p>
