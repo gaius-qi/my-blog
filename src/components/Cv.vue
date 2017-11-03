@@ -842,6 +842,6 @@ main
           font-size 1rem
 
 .english-education
-  padding-bottom 6.5rem
+  padding-bottom 3.5rem
 
 </style>
