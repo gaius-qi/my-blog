@@ -17,7 +17,7 @@
         <a href="https://www.facebook.com/gaius.qi" target="_blank">
           <div class="animated rubberBand" data-icon="ei-sc-facebook" data-size="m"></div>
         </a>
-        <a href="https://twitter.com/BobDylan0313" target="_blank">
+        <a href="https://twitter.com/gaius_qi" target="_blank">
           <div class="animated rubberBand" data-icon="ei-sc-twitter" data-size="m"></div>
         </a>
         <a href="/cv" target="_blank">
