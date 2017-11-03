@@ -14,7 +14,7 @@
         <a href="https://github.com/qwbtc" target="_blank">
           <div class="animated rubberBand" data-icon="ei-sc-github" data-size="m"></div>
         </a>
-        <a href="https://www.facebook.com/dylan.bob.77377" target="_blank">
+        <a href="https://www.facebook.com/gaius.qi" target="_blank">
           <div class="animated rubberBand" data-icon="ei-sc-facebook" data-size="m"></div>
         </a>
         <a href="https://twitter.com/BobDylan0313" target="_blank">
