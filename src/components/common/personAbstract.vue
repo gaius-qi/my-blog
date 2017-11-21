@@ -29,13 +29,13 @@
   </div>
   <div class="info-links">
     <div class="info-link">
-      <a href="https://github.com/qwbtc" target="_blank">
+      <a href="https://github.com/gaius-qi" target="_blank">
         <div class="icon-style" data-icon="ei-sc-github" data-size="s"></div>
         <span>Githup</span>
       </a>
     </div>
     <div class="info-link">
-      <a href="https://github.com/qwbtc" target="_blank">
+      <a href="https://twitter.com/gaius_qi" target="_blank">
         <div class="icon-style" data-icon="ei-sc-twitter" data-size="s"></div>
         <span>Twitter</span>
       </a>

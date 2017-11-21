@@ -11,7 +11,7 @@
       <div class="ityped-style"><span id="ityped"></span></div>
       <h2 class="animated rubberBand">Gaius' Blog</h2>
       <aside class="link-icon" role="complementary">
-        <a href="https://github.com/qwbtc" target="_blank">
+        <a href="https://github.com/gaius-qi" target="_blank">
           <div class="animated rubberBand" data-icon="ei-sc-github" data-size="m"></div>
         </a>
         <a href="https://www.facebook.com/gaius.qi" target="_blank">

@@ -16,6 +16,7 @@
       <transition-group name="slide-fade">
         <artcle-summary
           v-for="(page_content, index) in category_pages"
+          
           :key="page_content.id"
           :page-summary="page_content.summary"
           :page-title="page_content.title"
