@@ -37,11 +37,11 @@
             </p>
             <p>
               <i class="fa fa-github fa-fw" aria-hidden="true"></i>
-              <span>github.com/qwbtc</span>
+              <a href="http://github.com/gaius-qi" target="_blank"><span>github.com/gaius-qi</span></a>
             </p>
             <p>
               <i class="fa fa-home fa-fw" aria-hidden="true"></i>
-              <a href="http://qiwenbo.com/"><span>qiwenbo.com</span></a>
+              <a href="http://qiwenbo.com/" target="_blank"><span>qiwenbo.com</span></a>
             </p>
           </div>
           <hr>
@@ -369,11 +369,11 @@
             </p>
             <p>
               <i class="fa fa-github fa-fw" aria-hidden="true"></i>
-              <span>github.com/qwbtc</span>
+              <a href="http://github.com/gaius-qi" target="_blank"><span>github.com/gaius-qi</span></a>
             </p>
             <p>
               <i class="fa fa-home fa-fw" aria-hidden="true"></i>
-              <a href="http://qiwenbo.com/"><span>qiwenbo.com</span></a>
+              <a href="http://qiwenbo.com/" target="_blank"><span>qiwenbo.com</span></a>
             </p>
           </div>
           <hr>
