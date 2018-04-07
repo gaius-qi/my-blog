@@ -9,10 +9,10 @@
     </div>
     <nav-top class="bar"></nav-top>
     <header role="banner">
-      <img src="../assets/image/person-photo1.jpeg" class="person-photo">
+      <img src="../assets/image/person-photo1.jpeg" class="animated rubberBand person-photo">
       <h1 class="animated rubberBand" id="letter">GAIUS QI</h1>
-      <hr class="star-light">
-      <div class="ityped-style"><span id="ityped"></span></div>
+      <hr class="animated rubberBand star-light">
+      <div class="animated rubberBand ityped-style"><span id="ityped"></span></div>
       <aside class="link-icon" role="complementary">
         <a href="https://github.com/gaius-qi" target="_blank">
           <div class="animated rubberBand" data-icon="ei-sc-github" data-size="m"></div>
@@ -232,9 +232,6 @@ Add "scoped" attribute to limit CSS to this component only
     width 19em
     border-radius 50%
     box-shadow 0 0 1rem rgba(0, 0, 0, 1)
-    transition all 1s ease-in-out
-    &:hover
-      transform rotateY(360deg)
 
   hr.star-light
     border-top solid 0.25rem
@@ -266,7 +263,6 @@ Add "scoped" attribute to limit CSS to this component only
     transition all .5s ease
     &:hover
       // transform scale(1.2, 1.2)
-      color #FA8072
       cursor default
 
   @keyframes color-change
