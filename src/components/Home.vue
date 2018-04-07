@@ -229,7 +229,7 @@ Add "scoped" attribute to limit CSS to this component only
   .person-photo
     margin-top 8rem
     height 14rem
-    width 20em
+    width 19em
     border-radius 50%
     box-shadow 0 0 1rem rgba(0, 0, 0, 1)
     transition all 1s ease-in-out
