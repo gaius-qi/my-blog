@@ -133,7 +133,6 @@ Add "scoped" attribute to limit CSS to this component only
     // animation-iteration-count infinite
     transition all .5s ease
     &:hover
-      transform scale(1.2, 1.2)
       color #FA8072
       cursor default
 
@@ -245,7 +244,7 @@ Add "scoped" attribute to limit CSS to this component only
 
   .bg
     background-color #18bc9c
-    height 48.5rem
+    height 50rem
     width 100%
   
   .link-icon
