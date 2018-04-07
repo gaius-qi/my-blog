@@ -42,7 +42,6 @@ export default {
     border 0
     outline none
     transform scale(2, 2)
-    transition all .3s linear
     &:hover
       transform scale(3, 3)
 </style>

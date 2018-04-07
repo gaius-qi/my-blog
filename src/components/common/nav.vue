@@ -102,7 +102,7 @@ export default {
     // animation color-change 5s linear
     // animation-iteration-count infinite
     font-family 'Edo'
-    // transition all .5s ease
+    transition all .5s ease
     &:hover
       font-size 1.7rem
       color #FA8072

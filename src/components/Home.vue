@@ -9,7 +9,7 @@
     </div>
     <nav-top class="bar"></nav-top>
     <header role="banner">
-      <img src="../assets/image/person-photo.png" class="person-photo">
+      <img src="../assets/image/person-photo1.jpeg" class="person-photo">
       <h1 class="animated rubberBand" id="letter">GAIUS QI</h1>
       <hr class="star-light">
       <div class="ityped-style"><span id="ityped"></span></div>
@@ -79,10 +79,9 @@ export default {
   name: 'home',
   mounted () {
     init('#ityped', {
-      strings: ['Never forget that until the day',
-        'When God shall deign to reveal the future to man',
-        'All human wisdom is summed up',
-        'In these two words wait and hope'
+      strings: [
+        'Never forget that until the day when God shall deign to reveal the future to man.',
+        'All human wisdom is summed up in these two words wait and hope.'
       ],
       typeSpeed: 100,
       backSpeed: 30,
@@ -125,31 +124,32 @@ Add "scoped" attribute to limit CSS to this component only
     color #fff
 
   h1
-    margin 1rem 0 0 0
-    font-size 4rem
+    margin 2rem 0 0 0
+    font-size 3.5rem
     font-family Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif
     font-weight: 700
     // font-family 'blah', Chalkduster, Zapfino, fantasy
     // animation color-change 5s linear
     // animation-iteration-count infinite
-    // transition all .5s ease
+    transition all .5s ease
     &:hover
       transform scale(1.2, 1.2)
+      color #FA8072
       cursor default
 
-  h2
-    font-size 1.3rem
-    margin-top 2rem
-    color #fff
-    // animation color-change 5s linear
-    // animation-iteration-count infinite
-    // transition all .5s ease
-    font-family 'Edo'
-    &:hover
-      transform scale(1.2, 1.2)
-      cursor default
-  .link-icon
-    margin-top 1rem
+  // h2
+  //   font-size 1.3rem
+  //   margin-top 2rem
+  //   color #fff
+  //   animation color-change 5s linear
+  //   animation-iteration-count infinite
+  //   transition all .5s ease
+  //   font-family 'Edo'
+  //   &:hover
+  //     transform scale(1.2, 1.2)
+  //     cursor default
+  // .link-icon
+  //   margin-top 1rem
 
   .photo
     display block
@@ -227,8 +227,8 @@ Add "scoped" attribute to limit CSS to this component only
   //   min-height 100%
   //   overflow hidden
   .person-photo
-    margin-top 6.5rem
-    height 15rem
+    margin-top 8rem
+    height 14rem
     width 20em
     border-radius 50%
     box-shadow 0 0 1rem rgba(0, 0, 0, 1)
@@ -237,27 +237,36 @@ Add "scoped" attribute to limit CSS to this component only
       transform rotateY(360deg)
 
   hr.star-light
-    border-top solid 0.3rem
+    border-top solid 0.25rem
     text-align center
-    max-width 13rem
+    max-width 12rem
     margin 0.5rem auto 1rem
+    transition all .5s ease
+    &:hover
+      color #FA8072
+      border-color #FA8072
 
   .bg
     background-color #18bc9c
-    height 47rem
+    height 48.5rem
     width 100%
+  
+  .link-icon
+    margin-top 0.5rem
 
   .ityped-style
+    margin-top 2rem
     font-family Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif
     font-weight: light
     // font-family 'Edo', Chalkduster, Zapfino
     color #fff
-    font-size 2rem
+    font-size 1.8rem
     // animation color-change 5s linear
     // animation-iteration-count infinite
-    // transition all .5s ease
+    transition all .5s ease
     &:hover
       // transform scale(1.2, 1.2)
+      color #FA8072
       cursor default
 
   @keyframes color-change
