@@ -2,14 +2,17 @@
 <div class="container-all">
   <!-- 应该放入/static文件夹中, 因为vue-cli配置webpack不参与打包 -->
   <div class="header-container" ref='header'>
-    <video autoplay loop poster="/static/image/back.png" id="bgvid">
+    <!--<video autoplay loop poster="/static/image/back.png" id="bgvid">
       <source class="video-src" src="/static/video/background.mp4" type="video/mp4">
-    </video>
+    </video>-->
+    <div class="bg">
+    </div>
     <nav-top class="bar"></nav-top>
     <header role="banner">
-      <h1 class="animated rubberBand" id="letter">Fear always springs from ignorance.</h1>
+      <img src="../assets/image/person-photo.png" class="person-photo">
+      <h1 class="animated rubberBand" id="letter">GAIUS QI</h1>
+      <hr class="star-light">
       <div class="ityped-style"><span id="ityped"></span></div>
-      <h2 class="animated rubberBand">Gaius' Blog</h2>
       <aside class="link-icon" role="complementary">
         <a href="https://github.com/gaius-qi" target="_blank">
           <div class="animated rubberBand" data-icon="ei-sc-github" data-size="m"></div>
@@ -77,11 +80,9 @@ export default {
   mounted () {
     init('#ityped', {
       strings: ['Never forget that until the day',
-        'When God shall deign',
-        'To reveal the future to man',
+        'When God shall deign to reveal the future to man',
         'All human wisdom is summed up',
-        'In these two words',
-        'Wait and Hope'
+        'In these two words wait and hope'
       ],
       typeSpeed: 100,
       backSpeed: 30,
@@ -121,16 +122,17 @@ Add "scoped" attribute to limit CSS to this component only
     left: 0
     width 100%
     text-align center
-    color #00fa9a
+    color #fff
 
   h1
-    margin 10rem 0 1rem 0
+    margin 1rem 0 0 0
     font-size 4rem
-    font-weight lighter
-    font-family 'blah', Chalkduster, Zapfino, fantasy
-    animation color-change 5s linear
-    animation-iteration-count infinite
-    transition all .5s ease
+    font-family Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif
+    font-weight: 700
+    // font-family 'blah', Chalkduster, Zapfino, fantasy
+    // animation color-change 5s linear
+    // animation-iteration-count infinite
+    // transition all .5s ease
     &:hover
       transform scale(1.2, 1.2)
       cursor default
@@ -138,14 +140,16 @@ Add "scoped" attribute to limit CSS to this component only
   h2
     font-size 1.3rem
     margin-top 2rem
-    color #00fa9a
-    animation color-change 5s linear
-    animation-iteration-count infinite
-    transition all .5s ease
+    color #fff
+    // animation color-change 5s linear
+    // animation-iteration-count infinite
+    // transition all .5s ease
     font-family 'Edo'
     &:hover
       transform scale(1.2, 1.2)
       cursor default
+  .link-icon
+    margin-top 1rem
 
   .photo
     display block
@@ -218,21 +222,42 @@ Add "scoped" attribute to limit CSS to this component only
 
 // safari 浏览器video标签内source外边界有条线和边距
 // 要在vedio标签加overflow消除边距和线
-  video#bgvid
-    min-width 100%
-    min-height 100%
-    overflow hidden
+  // video#bgvid
+  //   min-width 100%
+  //   min-height 100%
+  //   overflow hidden
+  .person-photo
+    margin-top 6.5rem
+    height 15rem
+    width 20em
+    border-radius 50%
+    box-shadow 0 0 1rem rgba(0, 0, 0, 1)
+    transition all 1s ease-in-out
+    &:hover
+      transform rotateY(360deg)
+
+  hr.star-light
+    border-top solid 0.3rem
+    text-align center
+    max-width 13rem
+    margin 0.5rem auto 1rem
+
+  .bg
+    background-color #18bc9c
+    height 47rem
+    width 100%
 
   .ityped-style
-    font-family 'Edo', Chalkduster, Zapfino
-    color #00fa9a
-    font-size 2.6rem
-    margin-top 3rem
-    animation color-change 5s linear
-    animation-iteration-count infinite
-    transition all .5s ease
+    font-family Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif
+    font-weight: light
+    // font-family 'Edo', Chalkduster, Zapfino
+    color #fff
+    font-size 2rem
+    // animation color-change 5s linear
+    // animation-iteration-count infinite
+    // transition all .5s ease
     &:hover
-      transform scale(1.2, 1.2)
+      // transform scale(1.2, 1.2)
       cursor default
 
   @keyframes color-change
@@ -245,20 +270,20 @@ Add "scoped" attribute to limit CSS to this component only
     75%
         color #00fa9a
 
-@media screen and (max-device-width: 600px)
-  video
-    display: none
-  header
-    position static
-    width 100%
-    text-align center
-    overflow hidden
-    background url(../assets/image/phone-back.png)
-  .container-all
-    min-width 63rem
-  .bar
-    min-width 63rem
-  h1
-    margin 4rem 0 2rem 0
+// @media screen and (max-device-width: 600px)
+//   video
+//     display: none
+//   header
+//     position static
+//     width 100%
+//     text-align center
+//     overflow hidden
+//     background url(../assets/image/phone-back.png)
+//   .container-all
+//     min-width 63rem
+//   .bar
+//     min-width 63rem
+//   h1
+//     margin 4rem 0 2rem 0
 
 </style>

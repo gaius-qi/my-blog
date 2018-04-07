@@ -13,10 +13,10 @@
   </div>
   <div class="bar">
     <a href="#">
-      <div data-icon="ei-gear" data-size="s"></div>
+      <div data-icon="ei-gear" data-size="m"></div>
     </a>
     <a href="https://www.google.com.hk/" target="_blank">
-      <div data-icon="ei-search" data-size="s"></div>
+      <div data-icon="ei-search" data-size="m"></div>
     </a>
   </div>
   <el-dialog title="登陆" :visible.sync="dialogFormVisible" class="el-dialog-change">
@@ -82,28 +82,34 @@ export default {
     position absolute
     display flex
     justify-content space-between
-    width 98%
-    font-size 1rem
-    height 3rem
+    width 100%
+    font-size 1.5rem
+    height 4rem
     left 0rem
     top 0rem
     z-index 1
+    background-color #2c3e50
+    box-shadow  0 0 0.7rem 0.5rem rgba(0, 0, 0, 0.8)
+    .reminder-bar
+      padding-left 3rem
+      padding-top 0.8rem
 
   .navbar
     padding-left 1.5rem
-    color #00fa9a
+    color #fff
     font-weight bold
     text-decoration none
-    animation color-change 5s linear
-    animation-iteration-count infinite
+    // animation color-change 5s linear
+    // animation-iteration-count infinite
     font-family 'Edo'
-    transition all .5s ease
+    // transition all .5s ease
     &:hover
-      font-size 1.2rem
+      font-size 1.7rem
+      color #FA8072
 
   .bar
-    margin-right 1rem
-    margin-top 0.5rem
+    margin-right 3rem
+    padding-top 0.2rem
 
   .login
     opacity 0
