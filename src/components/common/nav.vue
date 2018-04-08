@@ -109,7 +109,7 @@ export default {
 
   .bar
     margin-right 3rem
-    padding-top 0.1rem
+    padding-top 0.25rem
     .titanic-open-message
       height 3.2rem
       width 2.6rem
