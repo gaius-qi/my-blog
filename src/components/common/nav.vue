@@ -13,10 +13,10 @@
   </div>
   <div class="bar">
     <a href="mailto:gaius.qi@gmail.com" target="_blank">
-      <div class="titanic titanic-open-message"></div>
+      <div data-icon="ei-envelope" data-size="m"></div>
     </a>
     <a href="https://www.google.com.hk/" target="_blank">
-      <div class="titanic titanic-search-close"></div>
+      <div data-icon="ei-search" data-size="m"></div>
     </a>
   </div>
   <el-dialog title="登陆" :visible.sync="dialogFormVisible" class="el-dialog-change">

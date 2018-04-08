@@ -10,16 +10,8 @@
     <nav-top class="bar"></nav-top>
     <header role="banner">
       <img src="../assets/image/person-photo1.jpeg" class="animated rubberBand person-photo">
-      <h1 class="animated rubberBand" id="letter">GAIUS QI</h1>
-      <div class="star-icons">
-        <div class='titanic titanic-star'></div>
-        <div class='titanic titanic-star'></div>
-        <div class='titanic titanic-star'></div>
-        <div class='titanic titanic-star'></div>
-        <div class='titanic titanic-star'></div>
-      </div>
-      
-      <!-- <hr class="animated rubberBand star-light"> -->
+      <h1 class="animated rubberBand" id="letter">GAIUS QI</h1>      
+      <hr class="animated rubberBand star-light">
       <div class="animated rubberBand ityped-style"><span id="ityped"></span></div>
       <aside class="link-icon" role="complementary">
         <a href="https://github.com/gaius-qi" target="_blank">
@@ -98,7 +90,8 @@ export default {
     })
     var titanic = new Titanic({
       hover: true, // auto animated on hover (default true)
-    });
+    })
+    titanic.begin('../../static/icon-json/')
   },
   components: {
     'homeDownButton': HomeDownButton,
@@ -158,8 +151,8 @@ Add "scoped" attribute to limit CSS to this component only
   //   &:hover
   //     transform scale(1.2, 1.2)
   //     cursor default
-  // .link-icon
-  //   margin-top 1rem
+  .link-icon
+    margin-top 1rem
 
   .photo
     display block
@@ -243,15 +236,15 @@ Add "scoped" attribute to limit CSS to this component only
     border-radius 50%
     box-shadow 0 0 1rem rgba(0, 0, 0, 1)
 
-  // hr.star-light
-  //   border-top solid 0.25rem
-  //   text-align center
-  //   max-width 12rem
-  //   margin 0.5rem auto 1rem
-  //   transition all .5s ease
-  //   &:hover
-  //     color #FA8072
-  //     border-color #FA8072
+  hr.star-light
+    border-top solid 0.25rem
+    text-align center
+    max-width 12rem
+    margin 0.5rem auto 1rem
+    transition all .5s ease
+    &:hover
+      color #FA8072
+      border-color #FA8072
 
   .bg
     background-color #18bc9c
