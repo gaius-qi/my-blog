@@ -12,11 +12,11 @@
     </el-button>
   </div>
   <div class="bar">
-    <a href="#">
-      <div data-icon="ei-gear" data-size="m"></div>
+    <a href="mailto:gaius.qi@gmail.com" target="_blank">
+      <div class="titanic titanic-open-message"></div>
     </a>
     <a href="https://www.google.com.hk/" target="_blank">
-      <div data-icon="ei-search" data-size="m"></div>
+      <div class="titanic titanic-search-close"></div>
     </a>
   </div>
   <el-dialog title="登陆" :visible.sync="dialogFormVisible" class="el-dialog-change">
@@ -109,8 +109,15 @@ export default {
 
   .bar
     margin-right 3rem
-    padding-top 0.2rem
-
+    padding-top 0.1rem
+    .titanic-open-message
+      height 3.2rem
+      width 2.6rem
+      margin-right 1.3rem
+    .titanic-search-close
+      height 2.5rem
+      width 3rem
+      margin-right 1rem
   .login
     opacity 0
     margin-left 10rem

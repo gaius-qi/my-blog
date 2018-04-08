@@ -282,7 +282,6 @@ Add "scoped" attribute to limit CSS to this component only
   .titanic-star
     height 3rem
     width 3rem
-    display inline-block
 
   @keyframes color-change
     0%, 100%
