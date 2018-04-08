@@ -231,6 +231,20 @@
             </div>
             <div class="aside">
               <p>
+                <span>爱奇艺</span>
+              </p>
+              <div class="time">
+                <i class="fa fa-calendar fa-fw time" aria-hidden="true"></i>
+                <span>2017&nbsp;年&nbsp;5&nbsp;月&nbsp;-&nbsp;2017&nbsp;年&nbsp;7&nbsp;月</span>
+              </div>
+              <article>
+                <span>
+                  基于Vue全家桶 + Element UI技术栈，主要参与广告部Landing Page项目的前端开发，对其标准工作流程有一定了解，结合相应需求对功能进行完善，提升用户体验。
+                </span>
+              </article>
+            </div>
+            <div class="aside">
+              <p>
                 <span>百度</span>
               </p>
               <div class="time">
@@ -564,6 +578,23 @@
             </div>
             <div class="aside">
               <p>
+                <span>iQIYI</span>
+              </p>
+              <div class="time">
+                <i class="fa fa-calendar fa-fw time" aria-hidden="true"></i>
+                <span>May 1, 2017 - July 1，2017</span>
+              </div>
+              <article>
+                <span>         
+                  Mainly engaged in front-end development of the Landing Page project in the Advertising Department.
+                  Have a certain understanding of the project's standard workflow.
+                  Improve functionality and improve user experience based on requirements.
+                  The mainly used technologies are Vue, Element UI and so on.
+                </span>
+              </article>
+            </div>
+            <div class="aside">
+              <p>
                 <span>Baidu</span>
               </p>
               <div class="time">
@@ -704,17 +735,16 @@ figure
   margin-top 0.5rem
   margin-bottom -6rem
   img
-    width 8rem
-    height 8rem
+    width 9rem
+    height 9rem
     border-radius 50%
-    box-shadow 0 0 1rem #708090
-    border 4px solid #20B2AA
+    box-shadow 0 0 0.5rem #000000
 
 
 aside
   width 18rem
   height auto
-  background #40E0D0
+  background #20B2AA
   color #ffffff
   font-size 1rem
   font-family 'Geosans'

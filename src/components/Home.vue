@@ -226,7 +226,7 @@ Add "scoped" attribute to limit CSS to this component only
   //   min-height 100%
   //   overflow hidden
   .person-photo
-    margin-top 8rem
+    margin-top 8.5rem
     height 14rem
     width 19em
     border-radius 50%
@@ -248,7 +248,7 @@ Add "scoped" attribute to limit CSS to this component only
     width 100%
   
   .link-icon
-    margin-top 0.5rem
+    margin-top 1rem
 
   .ityped-style
     margin-top 2rem

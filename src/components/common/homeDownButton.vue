@@ -38,6 +38,7 @@ export default {
 
 <style lang="stylus" scoped>
   .down
+    margin-top 1.5rem
     background rgba(0,0,0,0)
     border 0
     outline none
