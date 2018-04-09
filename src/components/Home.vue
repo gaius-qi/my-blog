@@ -96,8 +96,10 @@ export default {
 
     let devUrl = 'http://localhost:3000/v1/tag_icons/'
     let prodUrl = './v1/tag_icons/'
+    let qiniuCdn = 'http://p6wkrns38.bkt.clouddn.com/'
+    
     let titanic = new Titanic({
-        baseURL: prodUrl
+        baseURL: qiniuCdn
       })
   },
   components: {
