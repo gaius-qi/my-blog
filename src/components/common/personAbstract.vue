@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-  <img class="avatar" src="../../assets/image/person-photo.png"></img>
+  <img class="avatar" src="../../assets/image/person-photo.jpeg"></img>
   <a @click="create_page">
     <h3 class="nick-name" @click="scroll">Gaius</h3>
   </a>
