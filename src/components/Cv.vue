@@ -829,10 +829,10 @@ main
       padding-right 1rem
       margin-top 1rem
       .title
+        font-family 'Geosans'
         color #708090
         font-size 1rem
         font-weight normal
-        font-family 'Avenir'
         display flex
         justify-content space-between
         .project-icon
@@ -861,17 +861,18 @@ main
         color #708090
         font-size 1rem
       .time
-        color #778899
+        color #708090
         font-size 1rem
       article
-        margin-top 0.5rem
+        font-family 'Avenir'
+        margin-top 1rem
         color #778899
-        font-size 1rem
+        font-size 0.9rem
         p
           margin-top 0.4rem
-          font-size 1rem
+          font-size 0.9rem
 
 .english-education
-  padding-bottom 3.5rem
+  padding-bottom 1rem
 
 </style>
