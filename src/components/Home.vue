@@ -94,10 +94,17 @@ export default {
       loop: true
     })
 
+    // dev my server's api
     let devUrl = 'http://localhost:3000/v1/tag_icons/'
+    // prod my server's api
     let prodUrl = './v1/tag_icons/'
+    // qiniuCdn icon json
     let qiniuCdn = 'http://p6wkrns38.bkt.clouddn.com/'
-    
+    // aliCdn icon json
+    let aliCdn = 'http://daicon.oss-cn-qingdao.aliyuncs.com/'
+    // tencentCdn icon json
+    let tencentCdn = 'https://daicon-1253806562.cos.ap-shanghai.myqcloud.com/'
+
     let titanic = new Titanic({
         baseURL: qiniuCdn
       })
