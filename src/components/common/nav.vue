@@ -13,10 +13,10 @@
   </div>
   <div class="bar">
     <a href="mailto:gaius.qi@gmail.com" target="_blank">
-      <div data-icon="ei-envelope" data-size="m"></div>
+      <div class='titanic titanic-message'></div>
     </a>
     <a href="https://www.google.com.hk/" target="_blank">
-      <div data-icon="ei-search" data-size="m"></div>
+      <div class='titanic titanic-search'></div>
     </a>
   </div>
   <el-dialog title="登陆" :visible.sync="dialogFormVisible" class="el-dialog-change">
@@ -109,12 +109,12 @@ export default {
 
   .bar
     margin-right 3rem
-    padding-top 0.25rem
-    .titanic-open-message
+    padding-top 0.05rem
+    .titanic-message
       height 3.2rem
       width 2.6rem
       margin-right 1.3rem
-    .titanic-search-close
+    .titanic-search
       height 2.5rem
       width 3rem
       margin-right 1rem

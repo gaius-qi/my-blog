@@ -11,7 +11,12 @@
     <header role="banner">
       <img src="../assets/image/person-photo1.jpeg" class="animated rubberBand person-photo">
       <h1 class="animated rubberBand" id="letter">GAIUS QI</h1>      
-      <hr class="animated rubberBand star-light">
+      <div id='star'></div>
+      <div class='titanic titanic-star'></div>
+      <div class='titanic titanic-star'></div>
+      <div class='titanic titanic-star'></div>
+      <div class='titanic titanic-star'></div>
+      <div class='titanic titanic-star'></div>
       <div class="animated rubberBand ityped-style"><span id="ityped"></span></div>
       <aside class="link-icon" role="complementary">
         <a href="https://github.com/gaius-qi" target="_blank">
@@ -88,10 +93,12 @@ export default {
       backDelay: 1500,
       loop: true
     })
-    var titanic = new Titanic({
-      hover: true, // auto animated on hover (default true)
-    })
-    titanic.begin('../../static/icon-json/')
+
+    let devUrl = 'http://localhost:3000/v1/tag_icons/'
+    let prodUrl = './v1/tag_icons/'
+    let titanic = new Titanic({
+        baseURL: prodUrl
+      })
   },
   components: {
     'homeDownButton': HomeDownButton,
@@ -236,15 +243,15 @@ Add "scoped" attribute to limit CSS to this component only
     border-radius 50%
     box-shadow 0 0 1rem rgba(0, 0, 0, 1)
 
-  hr.star-light
-    border-top solid 0.25rem
-    text-align center
-    max-width 12rem
-    margin 0.5rem auto 1rem
-    transition all .5s ease
-    &:hover
-      color #FA8072
-      border-color #FA8072
+  // hr.star-light
+  //   border-top solid 0.25rem
+  //   text-align center
+  //   max-width 12rem
+  //   margin 0.5rem auto 1rem
+  //   transition all .5s ease
+  //   &:hover
+  //     color #FA8072
+  //     border-color #FA8072
 
   .bg
     background-color #18bc9c
@@ -253,7 +260,6 @@ Add "scoped" attribute to limit CSS to this component only
   
   .link-icon
     margin-top 1rem
-
 
   .ityped-style
     margin-top 0.5rem
@@ -269,12 +275,9 @@ Add "scoped" attribute to limit CSS to this component only
       // transform scale(1.2, 1.2)
       cursor default
 
-  .star-icons
-    margin 0.5rem auto 0 auto
+  // .star-icons
+  //   margin 0.5rem auto 0 auto
 
-  .titanic-star
-    height 3rem
-    width 3rem
 
   @keyframes color-change
     0%, 100%
