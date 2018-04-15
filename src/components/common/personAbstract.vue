@@ -31,7 +31,7 @@
     <div class="info-link">
       <a href="https://github.com/gaius-qi" target="_blank">
         <div class="icon-style" data-icon="ei-sc-github" data-size="s"></div>
-        <span>Githup</span>
+        <span>Github</span>
       </a>
     </div>
     <div class="info-link">
