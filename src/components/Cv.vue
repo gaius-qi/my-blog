@@ -33,7 +33,7 @@
             </p>
             <p>
               <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
-              <span>gaius.qi@gmail.com</span>
+              <span>gaius@qiwenbo.com</span>
             </p>
             <p>
               <i class="fa fa-github fa-fw" aria-hidden="true"></i>
@@ -379,7 +379,7 @@
             </p>
             <p>
               <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
-              <span>gaius.qi@gmail.com</span>
+              <span>gaius@qiwenbo.com</span>
             </p>
             <p>
               <i class="fa fa-github fa-fw" aria-hidden="true"></i>

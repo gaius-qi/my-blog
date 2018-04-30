@@ -12,7 +12,7 @@
     </el-button>
   </div>
   <div class="bar">
-    <a href="mailto:gaius.qi@gmail.com">
+    <a href="mailto:gaius@qiwenbo.com">
       <div class='titanic titanic-message'></div>
     </a>
     <a href="https://www.google.com.hk/" target="_blank">
