@@ -8,7 +8,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
-var PrerenderSpaPlugin = require('prerender-spa-plugin')
+// var PrerenderSpaPlugin = require('prerender-spa-plugin')
 
 var env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -29,12 +29,12 @@ var webpackConfig = merge(baseWebpackConfig, {
   },
   plugins: [
     // prerender-spa-plugin插件用于在单页应用中预渲染静态html内容
-    new PrerenderSpaPlugin(
-      // 输出目录的绝对路径
-      path.join(__dirname, '../dist'),
-      // 预渲染的路由
-      [ '/', '/cv' ]
-    ),
+    // new PrerenderSpaPlugin(
+    // 输出目录的绝对路径
+    //   path.join(__dirname, '../dist'),
+    // 预渲染的路由
+    //   [ '/', '/cv' ]
+    // ),
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({
       'process.env': env
