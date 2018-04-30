@@ -33,15 +33,21 @@
             </p>
             <p>
               <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
-              <span>gaius@qiwenbo.com</span>
+              <a href="mailto:gaius@qiwenbo.com">
+                <span>gaius@qiwenbo.com</span>
+              </a>
             </p>
             <p>
               <i class="fa fa-github fa-fw" aria-hidden="true"></i>
-              <a href="http://github.com/gaius-qi" target="_blank"><span>github.com/gaius-qi</span></a>
+              <a href="http://github.com/gaius-qi" target="_blank">
+                <span>github.com/gaius-qi</span>
+              </a>
             </p>
             <p>
               <i class="fa fa-home fa-fw" aria-hidden="true"></i>
-              <a href="http://qiwenbo.com/" target="_blank"><span>qiwenbo.com</span></a>
+              <a href="http://qiwenbo.com/" target="_blank">
+                <span>qiwenbo.com</span>
+              </a>
             </p>
           </div>
           <hr>
@@ -379,15 +385,21 @@
             </p>
             <p>
               <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
-              <span>gaius@qiwenbo.com</span>
+              <a href="mailto:gaius@qiwenbo.com">
+                <span>gaius@qiwenbo.com</span>
+              </a>
             </p>
             <p>
               <i class="fa fa-github fa-fw" aria-hidden="true"></i>
-              <a href="http://github.com/gaius-qi" target="_blank"><span>github.com/gaius-qi</span></a>
+              <a href="http://github.com/gaius-qi" target="_blank">
+                <span>github.com/gaius-qi</span>
+              </a>
             </p>
             <p>
               <i class="fa fa-home fa-fw" aria-hidden="true"></i>
-              <a href="http://qiwenbo.com/" target="_blank"><span>qiwenbo.com</span></a>
+              <a href="http://qiwenbo.com/" target="_blank">
+                <span>qiwenbo.com</span>
+              </a>
             </p>
           </div>
           <hr>
