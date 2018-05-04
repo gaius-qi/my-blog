@@ -11,6 +11,7 @@ import CategoryContainer from '../components/common/categoryContainer'
 import ArtcleCategory from '../components/common/artcleCategory'
 import Cv from '../components/Cv'
 import Cv2 from '../components/Cv2'
+import Location from '../components/Location'
 import store from '../store'
 
 Vue.use(Router)
@@ -73,6 +74,11 @@ const router = new Router({
       path: '/cv2',
       name: 'cv2',
       component: Cv2
+    },
+    {
+      path: '/location',
+      name: 'location',
+      component: Location
     }
   ]
 })
