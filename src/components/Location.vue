@@ -2,7 +2,9 @@
   <div class="all">
     <div class="top">
         <div class="navbar">
-            <button class="button-sign">Sign In</button>
+            <el-button class="button-sign" type="text" @click="dialogFormVisible = true">
+              Sign In
+            </el-button>
             <button class="button-sign">Sign Out</button>
         </div>
         <div class="content">
@@ -29,6 +31,21 @@
         <local-cart :n="this.n8" :s="this.s8"></local-cart>
       </div>
     </div>
+  <el-dialog title="登陆" :visible.sync="dialogFormVisible" class="el-dialog-change">
+    <el-form :model="form">
+      <el-form-item label="邮箱" :label-width="formLabelWidth">
+        <el-input v-model="form.email" auto-complete="off"></el-input>
+      </el-form-item>
+      <el-form-item label="密码" :label-width="formLabelWidth">
+        <el-input v-model="form.password" auto-complete="off" type="password"></el-input>
+        {{this.errorMsg}}
+      </el-form-item>
+    </el-form>
+    <div slot="footer" class="dialog-footer">
+      <el-button @click="dialogFormVisible = false">取 消</el-button>
+      <el-button type="primary" @click="signIn">确 定</el-button>
+    </div>
+  </el-dialog>
   </div>
 </template>
 
@@ -55,7 +72,14 @@ export default {
         n7: 0,
         s7: 0,
         n8: 0,
-        s8: 0
+        s8: 0,
+        dialogFormVisible: false,
+        form: {
+          email: '',
+          password: ''
+        },
+        formLabelWidth: '60px',
+        errorMsg: ''
       }
     },
     methods: {
@@ -121,7 +145,7 @@ export default {
   background-color rgba(0,0,0,0)
   width 8rem
   height 2.5rem
-  border-radius 0.3rem
+  border-radius 0.3rem !important
   border 2px solid #fff
   color #fff
   font-size 1rem
@@ -129,8 +153,9 @@ export default {
   margin-right 1rem
   transition all .5s ease
   &:hover 
-    background-color #ffffff
+    background-color #ffffff !important
     color #18bc9c
+    border 2px solid #fff !important
   &:focus
     outline none
 
