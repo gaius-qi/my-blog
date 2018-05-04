@@ -33,6 +33,7 @@
 </template>
 
 <script>
+import { mapActions, mapGetters, mapMutations, mapState } from 'vuex'
 import LocalCart from './common/localCart'
 export default {
     name: 'location',
@@ -60,7 +61,7 @@ export default {
     methods: {
       change () {
         let temp = this.message
-        if(temp !== null && temp !== undefined && temp !== '' && /^[0-9]*$/.test(temp)){
+        if(temp !== null && temp !== undefined && temp !== '' && /^[0-9]*$/.test(temp) && temp !== this.location_message && /^\d{1,6}$/.test(temp)){
           let start = new Date().getTime();
           while (new Date().getTime() < start + 2000)
           ;
@@ -81,11 +82,20 @@ export default {
           this.n8 = 'N:' + ((Math.random() < 0.5 ? -1 : 1) * Math.random() * 179).toFixed(2)
           this.s8 = 'S:' + ((Math.random() < 0.5 ? -1 : 1) * Math.random() * 179).toFixed(2)
         }
-      }
+        this.GET_LOCATION_MESSAGE(this.message)
+      },
+      ...mapMutations([
+        'GET_LOCATION_MESSAGE'
+      ])
+    },
+    computed: {
+      ...mapState([
+        'location_message'
+      ])
     },
     components: {
     'localCart': LocalCart
-  }
+    }
 }
 </script>
 

@@ -35,7 +35,9 @@ const state = {
   // 用户登陆信息
   user: {
     login: false
-  }
+  },
+  // location中的message信息
+  location_message: 0
 }
 
 Vue.use(Vuex)

@@ -50,5 +50,8 @@ export default {
       state.user = {login: false}
       localStorage.removeItem('user')
     }
+  },
+  [types.GET_LOCATION_MESSAGE] (state, location_message) {
+    state.location_message = location_message
   }
 }
