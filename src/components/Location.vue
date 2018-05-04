@@ -61,7 +61,7 @@ export default {
     methods: {
       change () {
         let temp = this.message
-        if(temp !== null && temp !== undefined && temp !== '' && /^[0-9]*$/.test(temp) && temp !== this.location_message && /^\d{1,6}$/.test(temp)){
+        if(temp !== null && temp !== undefined && temp !== '' && /^[0-9]*$/.test(temp) && temp !== this.location_message && /^\d{1,8}$/.test(temp)){
           let start = new Date().getTime();
           while (new Date().getTime() < start + 2000)
           ;
