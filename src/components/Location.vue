@@ -85,9 +85,9 @@ export default {
     methods: {
       change () {
         let temp = this.message
-        if(temp !== null && temp !== undefined && temp !== '' && /^[0-9]*$/.test(temp) && temp !== this.location_message && /^\d{1,8}$/.test(temp)){
+        if(temp !== null && temp !== undefined && temp !== '' && /^[0-9]*$/.test(temp) && temp !== this.location_message && /^\d{6,8}$/.test(temp)){
           let start = new Date().getTime();
-          while (new Date().getTime() < start + 10000)
+          while (new Date().getTime() < start + 11000)
           ;
           // this.n1 = 'N:' + ((Math.random() < 0.5 ? -1 : 1) * Math.random() * 179).toFixed(2)
           // this.s1 = 'S:' + ((Math.random() < 0.5 ? -1 : 1) * Math.random() * 179).toFixed(2)
