@@ -54,51 +54,6 @@
             </div>
             <div class="content">
               <p>
-                Golang
-              </p>
-              <p>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-              </p>
-              <p>
-                Gin
-              </p>
-              <p>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-              </p>
-              <p>
-                Kubernetes
-              </p>
-              <p>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-              </p>
-              <p>
                 Html
               </p>
               <p>
@@ -129,37 +84,7 @@
                 <i class="fa fa-star-o" aria-hidden="true"></i>
               </p>
               <p>
-                JavaScript/NodeJS
-              </p>
-              <p>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-              </p>
-              <p>
-                Egg
-              </p>
-              <p>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-              </p>
-              <p>
-                React
+                JavaScript
               </p>
               <p>
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -214,7 +139,7 @@
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
               </p>
@@ -233,6 +158,36 @@
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
               </p>
+              <p>
+                Mysql/PostgreSql
+              </p>
+              <p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </p>
+              <p>
+                Redis
+              </p>
+              <p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </p>
             </div>
           </div>
         </aside>
@@ -246,7 +201,7 @@
               <span>
                 喜爱程序员这个职业，对于代码独有一份热情，热衷于探索新技术。
                 具有良好的沟通能力和团队合作能力。
-                Vim 幸存者，喜爱 Ruby 的优雅和 JS 的无所不能，希望未来能够专注于云原生领域。
+                喜爱 Ruby 的优雅和 JS 的无所不能，希望未来能够专注于云原生领域。
                 对于解决问题的思路清晰，有良好的代码风格和注释。
                 一直保持 Review 自己代码的习惯，并要求自己精益求精。
                 本人坚信人无完人，只要放对地方，哪怕是一条咸鱼也有它的价值。
@@ -256,7 +211,7 @@
           </div>
           <div class="work">
             <div class="title">
-              <i class="fa fa-book" aria-hidden="true"></i>
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
               <span>实习经历</span>
             </div>
             <div class="aside">
@@ -371,7 +326,7 @@
             </div>
             <div class="project-content project-top">
               <div class="title">
-                <span>Mini Program Studio</span>
+                <span>MiniProgram Studio</span>
                 <div class="project-icon">
                   <div>
                     Electron
@@ -401,26 +356,364 @@
               </div>
               <article>
                 <span>硕士&nbsp;&nbsp;&nbsp;计算机技术</span>
-                <p>研究课题&nbsp;&nbsp;&nbsp;LBSN&nbsp;中基于协同过滤算法的位置推荐研究</p>
+                <p>研究课题&nbsp;LBSN&nbsp;中基于协同过滤算法的位置推荐研究</p>
               </article>
             </div>
           </div>
-          <div class="education">
-            <div class="title">
-              <i class="fa fa-bandcamp"></i>
-              <span>文档链接</span>
+        </main>
+      </div>
+      <footer>
+      </footer>
+    </div>
+    <div class="container">
+      <div class="mid">
+        <aside>
+          <figure>
+            <img src="../assets/image/my_photo.jpg" alt="">
+          </figure>
+          <div class="title">
+            <p>Curriculum Vitae</p>
+            <hr>
+          </div>
+          <div class="resume">
+            <p>
+              <i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i>
+              <span>Qi Wenbo</span>
+            </p>
+            <p>
+              <i class="fa fa-map-marker fa-fw" aria-hidden="true"></i>
+              <span>Dalian,&nbsp;&nbsp;Liaoning</span>
+            </p>
+            <p>
+              <i class="fa fa-user-o fa-fw" aria-hidden="true"></i>
+              <span>Front-end Web Developer</span>
+            </p>
+            <p>
+              <i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i>
+              <span>Jiangnan University</span>
+            </p>
+            <p>
+              <i class="fa fa-phone fa-fw" aria-hidden="true"></i>
+              <span>18806186275</span>
+            </p>
+            <p>
+              <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
+              <a href="mailto:gaius@qiwenbo.com">
+                <span>gaius@qiwenbo.com</span>
+              </a>
+            </p>
+            <p>
+              <i class="fa fa-github fa-fw" aria-hidden="true"></i>
+              <a href="http://github.com/gaius-qi" target="_blank">
+                <span>github.com/gaius-qi</span>
+              </a>
+            </p>
+            <p>
+              <i class="fa fa-home fa-fw" aria-hidden="true"></i>
+              <a href="http://qiwenbo.com/" target="_blank">
+                <span>qiwenbo.com</span>
+              </a>
+            </p>
+          </div>
+          <hr>
+          <div class="skills">
+            <div class="skills-title">
+              <i class="fa fa-wrench fa-fw" aria-hidden="true"></i>
+              <span>Skills</span>
             </div>
-            <div class="docs">
+            <div class="content">
+              <p>
+                Html
+              </p>
+              <p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </p>
+              <p>
+                Css
+              </p>
+              <p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </p>
+              <p>
+                JavaScript
+              </p>
+              <p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </p>
+              <p>
+                Vue
+              </p>
+              <p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </p>
+              <p>
+                Angular
+              </p>
+              <p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </p>
+              <p>
+                Ruby
+              </p>
+              <p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </p>
+              <p>
+                Rails
+              </p>
+              <p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </p>
+              <p>
+                Mysql/PostgreSql
+              </p>
+              <p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </p>
+              <p>
+                Redis
+              </p>
+              <p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </p>
+            </div>
+          </div>
+        </aside>
+        <main>
+          <div class="introduce">
+            <div class="title">
+              <i class="fa fa-user-secret" aria-hidden="true"></i>
+              <span>Personal introduce</span>
+            </div>
+            <article>
+              <span>
+                I like to be a front-end developer. Whenever coding is full of enthusiasm and keen to explore new technologies.
+                And I have good communication skills and team working spirit.
+                Moreover, I have been addicted to elegant Ruby and omnipotent JavaScript.
+                Have the general ability of server development with ROR and building front-end automation.
+                Be clear in mind and systematic in work.
+                In addition, I was constantly perfecting myself.
+                Every man is the architect of his own fortune.
+                Convinced that I can always keep coding passion.
+              </span>
+            </article>
+          </div>
+          <div class="work">
+            <div class="title">
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+              <span>Occupational History</span>
+            </div>
+            <div class="aside">
+              <p>
+                <span>Bnbtrip</span>
+              </p>
+              <div class="time">
+                <i class="fa fa-calendar fa-fw time" aria-hidden="true"></i>
+                <span>February 1, 2016 - May 1, 2017</span>
+              </div>
               <article>
-                <a target="_blank" href="https://yuque.antfin.com/docs/share/1aca6db4-f1f3-4de5-a658-24f4a935eed3?#">(1)服务端发布</a>
-                <a target="_blank" href="https://yuque.antfin.com/docs/share/9bda9bd5-67b2-4841-9993-caf353c9a0e4?#">(2)集群容灾系分</a>
-                <a target="_blank" href="https://yuque.antfin.com/docs/share/5a2f8660-5341-4431-9897-186b21eaee5a?#">(3)Marmot API(Kore) V1 系分</a>
-                <a target="_blank" href="https://yuque.antfin.com/docs/share/e77c76c3-b190-40f3-9bd8-60e75f78efba?#">(4)集群服务网络加速 V1 系分</a>
-                <a target="_blank" href="https://yuque.antfin.com/docs/share/957692ed-b598-4498-8c11-4323e6cf5753?#">(5)集群服务网络加速 V2 系分</a>
-                <a target="_blank" href="https://yuque.antfin.com/docs/share/1aea7649-5ff6-45f7-82c7-7b6bf180f918?#">(6)小程序云构建系分</a>
-                <a target="_blank" href="https://yuque.antfin.com/docs/share/094c57e9-b1d5-4e22-a1a6-7efc98d62217?#">(7)Walrus 系分</a>
-                <a target="_blank" href="https://yuque.antfin.com/docs/share/f097388d-ced6-4f6f-9110-6226cc2c2b88?#">(8)Faceless V1 系分</a>
-                <a target="_blank" href="https://yuque.antfin.com/docs/share/e6ca0c3e-ee74-4b17-97aa-0c12d716b2cb?#">(9)Faceless V2 系分</a>
+                <span>
+                  Participated in software design and discussed the business specification.
+                  Developed and designed user-friendly interface for web page.
+                  I worked on project development, which involved programming, coding and debugging.
+                  The mainly used technologies are Ruby On Rails, Semantic, Webpack, Vue, Vuex, Vue Router, Nokogiri and so on.
+                </span>
+              </article>
+            </div>
+            <div class="aside">
+              <p>
+                <span>iQIYI</span>
+              </p>
+              <div class="time">
+                <i class="fa fa-calendar fa-fw time" aria-hidden="true"></i>
+                <span>May 1, 2017 - July 1，2017</span>
+              </div>
+              <article>
+                <span>         
+                  Mainly engaged in front-end development of the Landing Page project in the Advertising Department.
+                  Have a certain understanding of the project's standard workflow.
+                  Improve functionality and improve user experience based on requirements.
+                  The mainly used technologies are Vue, Element UI and so on.
+                </span>
+              </article>
+            </div>
+            <div class="aside">
+              <p>
+                <span>Baidu</span>
+              </p>
+              <div class="time">
+                <i class="fa fa-calendar fa-fw time" aria-hidden="true"></i>
+                <span>July 1, 2017 - October 1，2017</span>
+              </div>
+              <article>
+                <span>
+                  Mainly responsible for business ecology data products front-end function design,
+                  development and implementation. Improve product ease of use and user experience,
+                  optimize the Web interface and business performance.
+                  The mainly used technologies are Angular4, TypeScript, PrimeNG and so on.
+                </span>
+              </article>
+            </div>
+          </div>
+          <div class="project">
+            <div class="title">
+              <i class="fa fa-archive fa-fw"></i>
+              <span>Personal Project</span>
+            </div>
+            <div class="project-content">
+              <div class="title">
+                <span>Personal Website</span>
+                <div class="project-icon">
+                  <div>
+                    Vue
+                  </div>
+                  <div>
+                    Rails
+                  </div>
+                </div>
+              </div>
+              <article>
+                <span>
+                  The environment of the project ‘s development includes OS X
+                  and background using PostgreSql storage, Redis, Rails, Mina and so on.
+                  The client uses Vue, Vuex, Vue Router, Axios, ECharts, Webhook and so on.
+                </span>
+              </article>
+            </div>
+            <div class="project-content project-top">
+              <div class="title">
+                <span>Sanda's Corporate Client</span>
+                <div class="project-icon">
+                  <div>
+                    Vue
+                  </div>
+                  <div>
+                    Element
+                  </div>
+                </div>
+              </div>
+              <article>
+                <span>
+                  The client uses Vue, Vuex, Vue Router, Axios，Element UI and so on.
+                  Moreover, I use WebSocket for real-time detecting system.
+                </span>
+              </article>
+            </div>
+            <div class="project-content project-top">
+              <div class="title">
+                <span>vue-beauty-paginator</span>
+                <div class="project-icon">
+                  <div>
+                    Webpack
+                  </div>
+                  <div>
+                    Vue
+                  </div>
+                </div>
+              </div>
+              <article>
+                <span>
+                  Simple and pretty pagination component for Vue.js version 2.
+                  Compiled code based on Webpack. Release package for npm.
+                </span>
+              </article>
+            </div>
+          </div>
+          <div class="education english-education">
+            <div class="title">
+              <i class="fa fa-graduation-cap fa-fw"></i>
+              <span>Education</span>
+            </div>
+            <div class="content">
+              <p>Jiangnan University</p>
+              <div class="time">
+                <i class="fa fa-calendar fa-fw time" aria-hidden="true"></i>
+                <span>July 1, 2015 - July 1, 2018</span>
+              </div>
+              <article>
+                <span>M.Phil in Computer Science</span>
+                <p>Research Field:&nbsp;&nbsp;&nbsp;Based On Collaborative Filtering Algorithm For Location Recommendation.</p>
               </article>
             </div>
           </div>
@@ -606,20 +899,5 @@ main
 
 .english-education
   padding-bottom 1rem
-
-.docs
-  article
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-top 0.8rem
-    a
-      font-family 'Avenir'
-      color #778899
-      font-size 0.9rem
-      font-weight normal
-      margin-left: 0.9rem 
-      margin-top: 0.3rem
-      text-decoration: underline;
 
 </style>
